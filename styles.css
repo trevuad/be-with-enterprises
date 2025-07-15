@@ -1,0 +1,172 @@
+/* Typographie générale */
+body {
+  font-family: 'Palatino Linotype', serif;
+  background-color: #F9F6EB;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+/* Bandeau haut - Navbar */
+header {
+  background-color: #082244;
+  padding: 15px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar li {
+  margin: 0 20px;
+}
+
+.navbar a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  text-align: center;
+}
+
+.hero-bg {
+  width: 100%;
+  display: block;
+}
+
+.hero-logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 150px;
+}
+
+/* Intro Title */
+.intro-title {
+  text-align: center;
+  margin: 40px 0;
+}
+
+/* Vision Section */
+.vision {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+}
+
+.vision-text {
+  flex: 1 1 400px;
+  max-width: 500px;
+}
+
+.vision-text h2 {
+  margin-top: 0;
+}
+
+.vision-image {
+  flex: 1 1 400px;
+  max-width: 500px;
+}
+
+.vision-image img {
+  width: 100%;
+  height: auto;
+}
+
+/* Bouton */
+.btn {
+  display: inline-block;
+  background-color: #082244;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+/* Symbols Section */
+.symbols {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.symbol-item {
+  flex: 1 1 200px;
+  margin: 20px;
+}
+
+.symbol-item img {
+  width: 100px;
+  height: auto;
+}
+
+/* Initiatives Section */
+.initiatives {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+}
+
+.initiatives-image {
+  flex: 1 1 400px;
+  max-width: 500px;
+}
+
+.initiatives-image img {
+  width: 100%;
+  height: auto;
+}
+
+.initiatives-text {
+  flex: 1 1 400px;
+  max-width: 500px;
+}
+
+/* Projects Section */
+.projects {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.project-logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project-logos img {
+  margin: 10px;
+  width: 120px;
+  height: auto;
+}
+
+/* Footer */
+footer {
+  background-color: #082244;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 40px;
+}
