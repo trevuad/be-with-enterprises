@@ -202,7 +202,7 @@ header {
 }
 
 .project-logos img {
-  width: 150px; /* AGRANDI de 50% */
+  width: 200px; /* AGRANDI de 50% */
   height: auto;
   filter: drop-shadow(0 5px 10px rgba(0,0,0,0.3));
 }
