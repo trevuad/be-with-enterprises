@@ -6,9 +6,16 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Palatino Linotype', serif;
-  background-color: #F9F6EB;
+  background-color: #082244;  /* Marges latérales couleur bannière */
   color: #000000;
   font-size: 17px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #F9F6EB;  /* Cœur du site */
+  padding: 0 40px;
 }
 
 /* ------------------------------
@@ -47,7 +54,7 @@ header {
 }
 
 /* ------------------------------
-   HERO SECTION
+   HERO SECTION (plein écran)
 ---------------------------------*/
 
 .hero {
@@ -64,8 +71,8 @@ header {
   position: absolute;
   top: 20px;
   left: 20px;
-  width: 225px; /* Taille augmentée */
-  box-shadow: 0 8px 15px rgba(0,0,0,0.4); /* Relief */
+  width: 225px;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.4);
   border-radius: 8px;
 }
 
@@ -79,7 +86,7 @@ header {
 }
 
 .intro-title h1 {
-  color: #000000;       /* Noir pur */
+  color: #000000;
   font-size: 60px;
   font-weight: 900;
   letter-spacing: 2px;
@@ -112,7 +119,7 @@ header {
 .vision-text p {
   font-size: 18px;
   line-height: 1.6;
-  font-weight: bold; /* Texte en gras */
+  font-weight: bold;
 }
 
 .vision-image {
@@ -209,7 +216,7 @@ header {
   gap: 40px;
   flex-wrap: wrap;
   padding: 40px 20px;
-  margin-bottom: 10px !important; /* Réduit vraiment l’espace */
+  margin-bottom: 10px !important;
   padding-bottom: 0 !important;
 }
 
@@ -252,7 +259,7 @@ header {
 .projects {
   text-align: center;
   padding: 40px 20px;
-  margin-top: 0 !important; /* Pas d’espace superflu */
+  margin-top: 0 !important;
 }
 
 .projects h2 {
