@@ -8,7 +8,7 @@ body {
   font-family: 'Palatino Linotype', serif;
   background-color: #F9F6EB;
   color: #000000;
-  font-size: 17px; /* +1 pt sur toutes les pages */
+  font-size: 17px; /* +1 pt */
 }
 
 /* ------------------------------
@@ -64,22 +64,24 @@ header {
   position: absolute;
   top: 20px;
   left: 20px;
-  width: 225px; /* déjà augmenté */
-  box-shadow: 0 8px 15px rgba(0,0,0,0.4); /* effet ombre forte */
-  border-radius: 8px; /* léger arrondi pour que ce soit soft */
+  width: 225px; /* 50% plus grand */
+  box-shadow: 0 8px 15px rgba(0,0,0,0.4); /* Relief */
+  border-radius: 8px;
 }
 
 /* ------------------------------
-   MAIN TITLE - CHROME EFFECT
+   MAIN TITLE - Titre chromé remplacé par image
 ---------------------------------*/
 
-.intro-title {
-  text-align: center;
-  margin: 50px 0;
+.intro-title-img {
+  display: block;
+  margin: 50px auto;
+  max-width: 500px;
 }
 
+/* Si tu gardes encore le h1 pour test, garde ça aussi */
 .intro-title h1 {
-  font-size: 60px; /* Plus imposant */
+  font-size: 60px;
   font-weight: 900;
   letter-spacing: 2px;
   background: linear-gradient(90deg, #c0c0c0, #ffffff, #c0c0c0);
@@ -114,7 +116,7 @@ header {
 .vision-text p {
   font-size: 18px;
   line-height: 1.6;
-  font-weight: bold; /* En gras */
+  font-weight: bold; /* Texte en gras */
 }
 
 .vision-image {
@@ -182,7 +184,7 @@ header {
 
 .timeline-transition {
   text-align: center;
-  margin: 30px auto;
+  margin: 30px auto; /* Avant : 60px auto */
   max-width: 900px;
 }
 
@@ -208,9 +210,10 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 40px;
   flex-wrap: wrap;
   padding: 40px 20px;
+  margin-bottom: 30px; /* Réduit l’espace sous l’image 3 */
 }
 
 .initiatives-image {
@@ -252,12 +255,14 @@ header {
 .projects {
   text-align: center;
   padding: 40px 20px;
+  margin-top: 0; /* Plus d’espace superflu */
 }
 
 .projects h2 {
-  font-size: 42px; /* Agrandi */
+  font-size: 42px;
   font-weight: bold;
-  margin-bottom: 0px;
+  margin-top: 0; /* Supprime la marge haute inutile */
+  margin-bottom: 20px;
 }
 
 .project-logos {
