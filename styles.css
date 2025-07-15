@@ -8,6 +8,7 @@ body {
   font-family: 'Palatino Linotype', serif;
   background-color: #F9F6EB;
   color: #000000;
+  font-size: 17px; /* +1 pt sur toutes les pages */
 }
 
 /* ------------------------------
@@ -63,11 +64,11 @@ header {
   position: absolute;
   top: 20px;
   left: 20px;
-  width: 150px;
+  width: 225px; /* Augmenté de 50% */
 }
 
 /* ------------------------------
-   MAIN TITLE
+   MAIN TITLE - CHROME EFFECT
 ---------------------------------*/
 
 .intro-title {
@@ -76,9 +77,13 @@ header {
 }
 
 .intro-title h1 {
-  font-size: 52px;
-  font-weight: bold;
+  font-size: 60px; /* Plus imposant */
+  font-weight: 900;
   letter-spacing: 2px;
+  background: linear-gradient(90deg, #c0c0c0, #ffffff, #c0c0c0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
 }
 
 /* ------------------------------
@@ -107,6 +112,7 @@ header {
 .vision-text p {
   font-size: 18px;
   line-height: 1.6;
+  font-weight: bold; /* En gras */
 }
 
 .vision-image {
@@ -169,6 +175,30 @@ header {
 }
 
 /* ------------------------------
+   FRIEZE TRANSITION BAR
+---------------------------------*/
+
+.timeline-transition {
+  text-align: center;
+  margin: 60px auto;
+  max-width: 900px;
+}
+
+.timeline-bar {
+  height: 4px;
+  width: 80%;
+  background: linear-gradient(90deg, #082244, #00aaff, #082244);
+  margin: 0 auto 20px auto;
+  border-radius: 2px;
+}
+
+.timeline-transition p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #082244;
+}
+
+/* ------------------------------
    INITIATIVES SECTION
 ---------------------------------*/
 
@@ -220,6 +250,12 @@ header {
 .projects {
   text-align: center;
   padding: 40px 20px;
+}
+
+.projects h2 {
+  font-size: 42px; /* Agrandi */
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .project-logos {
