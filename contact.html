@@ -19,25 +19,32 @@
     </nav>
   </header>
 
-  <!-- Conteneur de page -->
+  <!-- Bannière image -->
+  <section class="hero">
+    <img src="actifs/Image 1.png" alt="Hero Image" class="hero-bg" />
+  </section>
+
+  <!-- Contenu centré -->
   <div class="container">
-    <h1>Contactez-nous</h1>
-    <form action="https://formspree.io/f/mzzvbebl" method="POST">
-      <label>Votre nom :
-        <input type="text" name="name" required>
-      </label>
-      <label>Votre email :
-        <input type="email" name="email" required>
-      </label>
-      <label>Votre message :
-        <textarea name="message" rows="5" required></textarea>
-      </label>
+    <section class="contact-section">
+      <h1>Contactez-nous</h1>
+      <form action="https://formspree.io/f/mzzvbebl" method="POST">
+        <label>Votre nom :
+          <input type="text" name="name" required>
+        </label>
+        <label>Votre email :
+          <input type="email" name="email" required>
+        </label>
+        <label>Votre message :
+          <textarea name="message" rows="5" required></textarea>
+        </label>
 
-      <!-- Redirection vers une page de remerciements après envoi -->
-      <input type="hidden" name="_next" value="https://ton-site.vercel.app/merci.html">
+        <!-- Redirection vers page merci -->
+        <input type="hidden" name="_next" value="https://ton-site.vercel.app/merci.html">
 
-      <button type="submit" class="btn">Envoyer</button>
-    </form>
+        <button type="submit" class="btn">Envoyer</button>
+      </form>
+    </section>
   </div>
 
   <!-- Footer -->
