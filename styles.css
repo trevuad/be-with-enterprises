@@ -55,7 +55,7 @@ header {
   position: absolute;
   top: 40px;
   left: 40px;
-  width: 120px; /* Augmenté +50% */
+  width: 120px; /* +50% */
   height: auto;
   filter: drop-shadow(0 8px 12px rgba(0,0,0,0.3));
 }
@@ -77,16 +77,12 @@ header {
   margin: 40px 0;
 }
 
-/* Texte vision page accueil */
-.vision-text p {
-  font-weight: bold;
-}
-
+/* Vision bloc : ajustement image et texte */
 .vision {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
   align-items: center;
+  gap: 40px;
 }
 
 .vision-text {
@@ -94,9 +90,21 @@ header {
   min-width: 300px;
 }
 
+.vision-text p {
+  font-weight: bold;
+}
+
+.vision-image {
+  flex: 1;
+  text-align: center;
+}
+
 .vision-image img {
-  max-width: 100%;
+  max-width: 500px;
+  width: 100%;
   height: auto;
+  display: block;
+  margin: 0 auto;
   border-radius: 8px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
@@ -144,18 +152,31 @@ header {
   top: -14px;
 }
 
-/* Initiatives */
+/* Initiatives - Image 3 centrée */
 .initiatives {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
   align-items: center;
+  gap: 40px;
+}
+
+.initiatives-image {
+  flex: 1 1 100%;
+  text-align: center;
 }
 
 .initiatives-image img {
-  max-width: 100%;
+  max-width: 800px;
+  width: 100%;
   height: auto;
+  display: block;
+  margin: 0 auto;
   border-radius: 8px;
+}
+
+.initiatives-text {
+  flex: 1 1 100%;
+  text-align: center;
 }
 
 .initiatives-text h2 {
@@ -166,10 +187,11 @@ header {
   margin-bottom: 20px;
 }
 
+/* Nos Projets (Accueil) LOGOS x1.5 */
 .projects h2 {
   text-align: center;
   font-size: 36px;
-  margin: 40px 0;
+  margin: 40px 0 20px 0;
 }
 
 .project-logos {
@@ -180,7 +202,7 @@ header {
 }
 
 .project-logos img {
-  width: 100px;
+  width: 150px; /* AGRANDI de 50% */
   height: auto;
   filter: drop-shadow(0 5px 10px rgba(0,0,0,0.3));
 }
@@ -264,7 +286,6 @@ footer {
   line-height: 1.6;
 }
 
-/* Réduction des espaces trop grands */
 .initiatives, .projects {
   margin-bottom: 40px;
 }
