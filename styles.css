@@ -55,7 +55,7 @@ header {
   position: absolute;
   top: 40px;
   left: 40px;
-  width: 120px; /* +50% */
+  width: 240px; /* 120px x2 pour +100% */
   height: auto;
   filter: drop-shadow(0 8px 12px rgba(0,0,0,0.3));
 }
