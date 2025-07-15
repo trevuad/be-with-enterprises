@@ -5,62 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Notre Vision - BW ENTERPRISES</title>
   <link rel="stylesheet" href="styles.css" />
-  <style>
-    /* Ajustement pour cette page uniquement */
-    body {
-      font-size: 17px; /* +1 par rapport au 16px par défaut */
-    }
-    .vision-header {
-      position: relative;
-      text-align: center;
-    }
-    .vision-header img {
-      width: 100%;
-      height: auto;
-    }
-    .vision-header .overlay-text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: #FFFFFF;
-      background: rgba(0, 0, 0, 0.4);
-      padding: 20px;
-      max-width: 80%;
-      font-size: 20px;
-      line-height: 1.4;
-    }
-    .vision-title {
-      text-align: center;
-      margin: 40px 0 20px 0;
-      font-size: 42px;
-      font-weight: bold;
-      letter-spacing: 1px;
-    }
-    .vision-content {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 0 20px;
-      line-height: 1.8;
-    }
-    .vision-content p {
-      margin: 30px 0;
-    }
-    .vision-footer {
-      position: relative;
-      margin-top: 60px;
-    }
-    .vision-footer img {
-      width: 100%;
-      height: auto;
-      max-height: 400px; /* hauteur réduite pour plus léger */
-      object-fit: cover;
-    }
-  </style>
 </head>
 <body>
 
-  <!-- Header identique -->
+  <!-- Header -->
   <header>
     <nav class="navbar">
       <ul>
@@ -72,50 +20,68 @@
     </nav>
   </header>
 
-  <!-- Image 4 en bannière -->
-  <section class="vision-header">
-    <img src="assets/image-4.png" alt="Vision Header" />
+  <!-- Hero Banner plein écran -->
+  <section class="hero">
+    <img src="assets/image-4.png" alt="Vision Banner" class="hero-bg" />
   </section>
 
-  <!-- Titre principal -->
-  <h1 class="vision-title">Penser Relier Bâtir</h1>
+  <!-- Contenu centré -->
+  <div class="container">
 
-  <!-- Texte principal -->
-  <section class="vision-content">
-    <p>Au cœur de Better World Enterprises, nous croyons qu’un monde meilleur ne se décrète pas : il se structure, patiemment, par l’alliance de femmes et d’hommes résolus à agir ensemble.</p>
+    <!-- Titre -->
+    <section class="intro-title">
+      <h1>Penser Relier Bâtir</h1>
+    </section>
 
-    <p>Notre vision est celle d’un écosystème vivant, pensé comme une systémie cohérente, où chaque projet qu’il soit éducatif, économique, social ou technologique participe à renforcer l’ensemble.</p>
+    <!-- Texte complet -->
+    <section class="vision-content">
+      <p>
+        Au cœur de Better World Enterprises, nous croyons qu’un monde meilleur ne se décrète pas : il se structure, patiemment, par l’alliance de femmes et d’hommes résolus à agir ensemble.
+      </p>
+      <p>
+        Notre vision est celle d’un écosystème vivant, pensé comme une systémie cohérente, où chaque projet qu’il soit éducatif, économique, social ou technologique participe à renforcer l’ensemble.
+      </p>
+      <p>
+        Nous défendons une approche qui conjugue intégrité, transparence et responsabilité partagée, afin que chaque action ait un impact mesurable et durable, au-delà des effets d’annonce.
+      </p>
+      <p>
+        Pour nous, bâtir un monde plus juste et plus vivant, c’est :
+      </p>
+      <ul>
+        <li>Relier celles et ceux qui portent des idées et les rendent réelles.</li>
+        <li>Créer des synergies entre des pôles complémentaires, qu’il s’agisse d’éducation, de recherche, d’habitat, de santé, ou d’économie circulaire.</li>
+        <li>Ouvrir la voie à de nouvelles dynamiques, qu’elles soient locales ou globales, tout en respectant la diversité des contextes.</li>
+      </ul>
+      <p>
+        Chaque projet de Better World s’inscrit dans cette vision : un cercle vivant, toujours en mouvement, où l’innovation se met au service du bien commun et de la souveraineté collective.
+      </p>
+      <p>
+        Nous affirmons qu’en réunissant la force de la rigueur, la noblesse de l’intention, et le courage de la transparence, il devient possible de restaurer la confiance et d’offrir au monde sa plus belle version.
+      </p>
+      <p>
+        <strong>Ensemble, nous avançons !</strong>
+      </p>
+      <p>
+        Cette vision n’est pas une promesse abstraite, mais une dynamique concrète qui s’incarne jour après jour grâce à celles et ceux qui choisissent de s’y engager.
+      </p>
+    </section>
 
-    <p>Nous défendons une approche qui conjugue intégrité, transparence et responsabilité partagée, afin que chaque action ait un impact mesurable et durable, au-delà des effets d’annonce.</p>
-
-    <p>Pour nous, bâtir un monde plus juste et plus vivant, c’est :<br />
-    Relier celles et ceux qui portent des idées et les rendent réelles.<br />
-    Créer des synergies entre des pôles complémentaires, qu’il s’agisse d’éducation, de recherche, d’habitat, de santé, ou d’économie circulaire.<br />
-    Ouvrir la voie à de nouvelles dynamiques, qu’elles soient locales ou globales, tout en respectant la diversité des contextes.</p>
-
-    <p>Chaque projet de Better World s’inscrit dans cette vision : un cercle vivant, toujours en mouvement, où l’innovation se met au service du bien commun et de la souveraineté collective.</p>
-
-    <p>Nous affirmons qu’en réunissant la force de la rigueur, la noblesse de l’intention, et le courage de la transparence, il devient possible de restaurer la confiance et d’offrir au monde sa plus belle version.</p>
-
-    <p><strong>Ensemble, nous avançons !</strong><br /><br />
-    Cette vision n’est pas une promesse abstraite, mais une dynamique concrète qui s’incarne jour après jour grâce à celles et ceux qui choisissent de s’y engager.</p>
-  </section>
-
-  <!-- Image 1 en bas avec texte incrusté -->
-  <section class="vision-footer">
-    <div style="position: relative;">
-      <img src="assets/image-1.png" alt="Footer Vision" />
-      <div class="overlay-text">
-        Rejoindre Better World Enterprises, c’est participer à un cercle ouvert,
-        bâtir des ponts entre projets, idées et talents, et devenir acteur d’une transformation lucide, audacieuse et durable.
+    <!-- Image finale + texte intégré -->
+    <section class="vision-banner-end">
+      <div class="vision-banner-wrapper">
+        <img src="assets/image-1.png" alt="Vision Footer" class="vision-footer-img" />
+        <div class="vision-footer-text">
+          <p>Rejoindre Better World Enterprises, c’est participer à un cercle ouvert, bâtir des ponts entre projets, idées et talents, et devenir acteur d’une transformation lucide, audacieuse et durable.</p>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer identique -->
-  <footer>
-    <p>© 2025 BW ENTERPRISES. Tous droits réservés. Aucune duplication même partielle n’est acceptée. Mentions légales.</p>
-  </footer>
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 BW ENTERPRISES. Tous droits réservés. Mentions légales.</p>
+    </footer>
+
+  </div> <!-- /.container -->
 
 </body>
 </html>
