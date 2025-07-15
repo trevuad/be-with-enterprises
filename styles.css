@@ -298,24 +298,28 @@ footer {
 
 /* Section Contact */
 .contact-section {
-  padding: 60px 0;
+  padding: 60px 20px;   /* Ajoute un peu de padding latéral */
+  max-width: 800px;     /* Limite la largeur du bloc pour qu'il reste centré */
+  margin: 0 auto;       /* Centre le bloc dans la container */
   text-align: center;
 }
 
-.contact-form {
-  max-width: 600px;
-  margin: 0 auto;
+.contact-section h1 {
+  margin-bottom: 30px;
+}
+
+.contact-section form {
   text-align: left;
 }
 
-.contact-form label {
+.contact-section label {
   display: block;
   margin-top: 15px;
   font-weight: bold;
 }
 
-.contact-form input,
-.contact-form textarea {
+.contact-section input,
+.contact-section textarea {
   width: 100%;
   padding: 10px;
   margin-top: 5px;
@@ -323,12 +327,14 @@ footer {
   border-radius: 4px;
 }
 
-.contact-form textarea {
+.contact-section textarea {
   min-height: 150px;
   resize: vertical;
 }
 
-.contact-form button.btn {
-  margin-top: 20px;
+.contact-section button.btn {
+  display: block;
+  margin: 30px auto 0 auto; /* Centre le bouton sous le formulaire */
 }
+
 
