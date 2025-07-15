@@ -1,13 +1,19 @@
-/* Typographie générale */
+/* ------------------------------
+   RESET & BASE
+---------------------------------*/
+
 body {
+  margin: 0;
+  padding: 0;
   font-family: 'Palatino Linotype', serif;
   background-color: #F9F6EB;
   color: #000000;
-  margin: 0;
-  padding: 0;
 }
 
-/* Bandeau haut - Navbar */
+/* ------------------------------
+   HEADER / NAVBAR
+---------------------------------*/
+
 header {
   background-color: #082244;
   padding: 15px 0;
@@ -39,7 +45,10 @@ header {
   text-decoration: underline;
 }
 
-/* Hero Section */
+/* ------------------------------
+   HERO SECTION
+---------------------------------*/
+
 .hero {
   position: relative;
   text-align: center;
@@ -57,17 +66,30 @@ header {
   width: 150px;
 }
 
-/* Intro Title */
+/* ------------------------------
+   MAIN TITLE
+---------------------------------*/
+
 .intro-title {
   text-align: center;
-  margin: 40px 0;
+  margin: 50px 0;
 }
 
-/* Vision Section */
+.intro-title h1 {
+  font-size: 52px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* ------------------------------
+   VISION SECTION
+---------------------------------*/
+
 .vision {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  gap: 40px;
   flex-wrap: wrap;
   padding: 40px 20px;
 }
@@ -78,7 +100,13 @@ header {
 }
 
 .vision-text h2 {
-  margin-top: 0;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.vision-text p {
+  font-size: 18px;
+  line-height: 1.6;
 }
 
 .vision-image {
@@ -89,9 +117,19 @@ header {
 .vision-image img {
   width: 100%;
   height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
 }
 
-/* Bouton */
+.vision-image img:hover {
+  transform: translateY(-5px);
+}
+
+/* ------------------------------
+   BUTTON
+---------------------------------*/
+
 .btn {
   display: inline-block;
   background-color: #082244;
@@ -101,7 +139,10 @@ header {
   margin-top: 20px;
 }
 
-/* Symbols Section */
+/* ------------------------------
+   SYMBOLS SECTION
+---------------------------------*/
+
 .symbols {
   display: flex;
   justify-content: space-around;
@@ -118,13 +159,24 @@ header {
 .symbol-item img {
   width: 100px;
   height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
 }
 
-/* Initiatives Section */
+.symbol-item img:hover {
+  transform: translateY(-5px);
+}
+
+/* ------------------------------
+   INITIATIVES SECTION
+---------------------------------*/
+
 .initiatives {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  gap: 40px;
   flex-wrap: wrap;
   padding: 40px 20px;
 }
@@ -137,6 +189,13 @@ header {
 .initiatives-image img {
   width: 100%;
   height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.initiatives-image img:hover {
+  transform: translateY(-5px);
 }
 
 .initiatives-text {
@@ -144,7 +203,20 @@ header {
   max-width: 500px;
 }
 
-/* Projects Section */
+.initiatives-text h2 {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.initiatives-text p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* ------------------------------
+   PROJECTS SECTION
+---------------------------------*/
+
 .projects {
   text-align: center;
   padding: 40px 20px;
@@ -160,9 +232,19 @@ header {
   margin: 10px;
   width: 120px;
   height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
 }
 
-/* Footer */
+.project-logos img:hover {
+  transform: translateY(-5px);
+}
+
+/* ------------------------------
+   FOOTER
+---------------------------------*/
+
 footer {
   background-color: #082244;
   color: #FFFFFF;
