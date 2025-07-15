@@ -208,7 +208,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 30px;
   flex-wrap: wrap;
   padding: 40px 20px;
 }
@@ -257,7 +257,7 @@ header {
 .projects h2 {
   font-size: 42px; /* Agrandi */
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .project-logos {
