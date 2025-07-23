@@ -327,7 +327,7 @@ footer {
   margin: 30px auto 0 auto;
 }
 
-/* === POPUP (isolé, sans effet sur le reste) === */
+/* === POPUP FINAL STABLE === */
 #popupModal {
   display: none;
   position: fixed;
@@ -335,7 +335,7 @@ footer {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(8, 34, 68, 0.75); /* Fond sombre bleu marine transparent */
+  background-color: rgba(8, 34, 68, 0.75);
   backdrop-filter: blur(4px);
   z-index: 9999;
   justify-content: center;
@@ -355,7 +355,7 @@ footer {
   box-shadow: 0 10px 25px rgba(0,0,0,0.4);
   position: relative;
   text-align: center;
-  animation: fadeIn 0.4s ease-in-out;
+  animation: fadeIn 0.3s ease-in-out;
 }
 
 #popupModalContent img {
@@ -378,8 +378,8 @@ footer {
 
 #popupModal .close-btn {
   position: absolute;
-  top: 8px;
-  right: 12px;
+  top: 10px;
+  right: 15px;
   font-size: 26px;
   background: none;
   border: none;
