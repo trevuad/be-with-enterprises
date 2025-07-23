@@ -4,11 +4,110 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nos Projets - BW OM</title>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Palatino+Linotype&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: "Palatino Linotype", serif;
+      background-color: #ffffff;
+      color: #000;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #082244;
+      color: #fff;
+    }
+
+    .navbar ul {
+      list-style: none;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .navbar li a {
+      color: #fff;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .hero {
+      position: relative;
+      width: 100%;
+    }
+
+    .hero-bg {
+      width: 100%;
+      display: block;
+      max-height: 400px;
+      object-fit: cover;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px;
+      background: #F9F6EB;
+      border-left: 30px solid #082244;
+      border-right: 30px solid #082244;
+    }
+
+    .section-alt {
+      background-color: #082244;
+      color: #ffffff;
+      padding: 50px 30px;
+      border-radius: 12px;
+      margin-bottom: 40px;
+    }
+
+    .quote {
+      font-style: italic;
+      border-left: 4px solid #082244;
+      padding-left: 20px;
+      color: #444;
+      margin: 40px 0;
+    }
+
+    .projects-list {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 30px;
+    }
+
+    .project-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 30px;
+      margin-bottom: 60px;
+    }
+
+    .project-logo {
+      width: 145px;
+      height: auto;
+      flex-shrink: 0;
+      filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
+    }
+
+    .project-text {
+      flex: 1;
+    }
+
+    .project-text h2 {
+      margin: 0 0 10px 0;
+      font-size: 24px;
+      color: #082244;
+    }
+
+    .project-text p {
+      line-height: 1.6;
+    }
+  </style>
 </head>
 <body>
-  <!-- NAVIGATION PRINCIPALE -->
   <header>
     <nav class="navbar">
       <ul>
@@ -19,20 +118,16 @@
       </ul>
     </nav>
   </header>
-  <!-- BANNIÈRE PROJETS -->
+
   <section class="hero">
     <img class="hero-bg" src="https://www.dropbox.com/scl/fi/fx52jr5xi48v1kwmvzdhl/notre-vision1.png?rlkey=lkgy3aba4dy8tkrzse75v3j2s&raw=1" alt="Nos Projets - BW OM">
   </section>
 
-  <!-- CONTENU TEXTE PROJETS -->
   <section class="container">
     <div class="section-alt">
       <p><strong>Au commencement</strong>, il y a une envie simple, directe, essentielle : <strong>faire gagner les joueurs</strong>.</p>
       <p>Non pas un gagnant solitaire au bout d’un suspense interminable, mais <strong>des gagnants tous les jours</strong>, en continu, dans un système pensé pour redistribuer plutôt que retenir.</p>
-      <p><strong>BW OM</strong>, c’est une loterie d’un nouveau genre : <strong>ouverte 24h/24, sans interruption, sans épuisement, sans frustration.</strong><br>
-      Chaque ticket acheté alimente un flux dynamique où chaque tirage devient une opportunité réelle.<br>
-      Pas de limite au nombre de gagnants. Pas de tirage unique.<br>
-      <strong>Des gains justes, fréquents, concrets.</strong></p>
+      <p><strong>BW OM</strong>, c’est une loterie d’un nouveau genre : <strong>ouverte 24h/24, sans interruption, sans épuisement, sans frustration.</strong><br>Chaque ticket acheté alimente un flux dynamique où chaque tirage devient une opportunité réelle.<br>Pas de limite au nombre de gagnants. Pas de tirage unique.<br><strong>Des gains justes, fréquents, concrets.</strong></p>
     </div>
 
     <div class="quote">
@@ -42,8 +137,7 @@
 
     <div class="section-alt">
       <p>BW OM a été conçu pour <strong>générer du mouvement, de la joie, du pouvoir d’achat</strong>, mais aussi pour <strong>soutenir une vision à long terme</strong> : celle d’un monde restauré, digne et durable.</p>
-      <p>Parce que derrière chaque lot, il y a <strong>un projet à nourrir</strong>.<br>
-      Derrière chaque ticket, <strong>un élan pour l’avenir</strong>.</p>
+      <p>Parce que derrière chaque lot, il y a <strong>un projet à nourrir</strong>.<br>Derrière chaque ticket, <strong>un élan pour l’avenir</strong>.</p>
     </div>
 
     <div class="quote">
@@ -52,18 +146,13 @@
     </div>
 
     <div class="section-alt">
-      <p><strong>OM est cette terre fertile. Cette source. Cette lumière.</strong><br>
-      Il rend possible ce que beaucoup croyaient irréalisable.</p>
-      <p><strong>C’est pourquoi nous avons choisi de faire de BW OM la nourrice de tous nos projets.</strong><br>
-      C’est par lui que les premières pierres seront posées.<br>
-      C’est grâce à lui que tout ce que nous avons rêvé de mieux pour demain pourra exister aujourd’hui.</p>
+      <p><strong>OM est cette terre fertile. Cette source. Cette lumière.</strong><br>Il rend possible ce que beaucoup croyaient irréalisable.</p>
+      <p><strong>C’est pourquoi nous avons choisi de faire de BW OM la nourrice de tous nos projets.</strong><br>C’est par lui que les premières pierres seront posées.<br>C’est grâce à lui que tout ce que nous avons rêvé de mieux pour demain pourra exister aujourd’hui.</p>
     </div>
 
-    <p class="accent">Et ce n’est que le début.<br>
-    Découvrez comment, grâce à OM, chaque projet de Be With Enterprises trouve sa place dans une dynamique cohérente, joyeuse et porteuse.</p>
+    <p style="text-align: center; font-size: 20px; color: #082244; font-weight: bold; margin-top: 60px;">Et ce n’est que le début.<br>Découvrez comment, grâce à OM, chaque projet de Be With Enterprises trouve sa place dans une dynamique cohérente, joyeuse et porteuse.</p>
   </section>
 
-  <!-- PROJETS CONCRETS -->
   <section class="projects-list">
     <div class="project-item">
       <img src="assets/logo-om.png" alt="BW OM" class="project-logo">
@@ -109,7 +198,6 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer style="background: #082244; color: white; text-align: center; padding: 30px; font-size: 14px;">
     <p>© 2025 Be With Enterprises. Tous droits réservés. Aucune duplication, même partielle, n’est acceptée. Mentions légales.</p>
   </footer>
