@@ -5,6 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BW ENTERPRISES</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      background-color: #ffffff; /* fond blanc */
+    }
+    .hero {
+      position: relative;
+    }
+    .hero img.banner {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .hero img.logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      height: 100px;
+      object-fit: contain;
+    }
+    .intro-title {
+      text-align: center;
+      padding: 40px 20px 20px;
+    }
+    .intro-title h1 {
+      font-size: 1.8em;
+      line-height: 1.5;
+    }
+  </style>
 </head>
 <body>
 
@@ -22,16 +50,25 @@
 
   <!-- Hero -->
   <section class="hero">
-    <img src="https://www.dropbox.com/scl/fi/svpn0igq0ijzlidhbpqxb/2BC93A59-1608-406E-87C3-2778CE98EF5E.png?rlkey=nxzbji8s7jtkvdla7ons7p09h&st=r0jwz3s2&raw=1" alt="Bannière Be With" style="width: 100%; height: auto;" />
-    <img src="https://www.dropbox.com/scl/fi/wcx18na9bcn8vxb0iect1/5EAE0391-39AB-4A9E-AB5A-5BD63E77D2E0.png?rlkey=cez7yvtl9k2m3zpoa2it9p84h&st=21bzrtvp&raw=1" alt="Logo Be With" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); max-height: 120px;" />
+    <!-- Bannière -->
+    <img src="https://www.dropbox.com/scl/fi/svpn0igq0ijzlidhbpqxb/2BC93A59-1608-406E-87C3-2778CE98EF5E.png?rlkey=nxzbji8s7jtkvdla7ons7p09h&st=r0jwz3s2&raw=1"
+         alt="Bannière Be With"
+         class="banner" />
+    <!-- Logo en haut à gauche -->
+    <img src="https://www.dropbox.com/scl/fi/wcx18na9bcn8vxb0iect1/5EAE0391-39AB-4A9E-AB5A-5BD63E77D2E0.png?rlkey=cez7yvtl9k2m3zpoa2it9p84h&st=21bzrtvp&raw=1"
+         alt="Logo Be With"
+         class="logo" />
   </section>
 
   <!-- Contenu -->
   <div class="container">
 
-    <!-- Titre -->
+    <!-- Nouveau titre -->
     <section class="intro-title">
-      <h1>BETTER WORLD ENTERPRISES</h1>
+      <h1>
+        Projet BW OM, la révolution du jeu !<br />
+        La première loterie mondiale qui relance le pouvoir d'achat !
+      </h1>
     </section>
 
     <!-- Bloc vision -->
@@ -100,10 +137,11 @@
         <img src="assets/logo-bwt.png" alt="BWT" />
         <img src="assets/logo-bw-village.png" alt="BW Village" />
         <img src="assets/logo-bw-school.png" alt="BW School" />
-     <!-- Bouton centré sous les logos -->
-<div class="btn-wrapper">
-  <a href="projets.html" class="btn">En Savoir Plus</a>
-</div>
+      </div>
+      <!-- Bouton centré sous les logos -->
+      <div class="btn-wrapper">
+        <a href="projets.html" class="btn">En Savoir Plus</a>
+      </div>
     </section>
 
     <!-- Footer -->
