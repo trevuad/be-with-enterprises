@@ -214,7 +214,7 @@
   <!-- SCRIPT JS -->
   <script>
     function closePopup() {
-      document.getElementById("popupModal").style.display = "none";
+      document.getElementById("popupModal").popup.classList.add("active");
       if (document.getElementById("dontShowAgain").checked) {
         localStorage.setItem("hidePopup", "true");
       }
