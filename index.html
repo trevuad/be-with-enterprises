@@ -166,31 +166,36 @@
   <!-- POPUP -->
 <div id="popupModal">
   <div id="popupModalContent">
-    <a href="projets.html">
-      <img src="https://www.dropbox.com/scl/fi/rsj78b1e9xrnatx4k0ypa/popup1.png?rlkey=qnty3eqm2ahkhgzchg8n2dwm2&raw=1" alt="Popup OM">
-    </a> <!-- <<< C'était ça qu'il manquait -->
-    <button class="close-btn" onclick="closePopup()">&times;</button>
+    <a href="projets.html" target="_blank">
+      <img src="https://www.dropbox.com/scl/fi/rsj78b1e9xrnatx4k0ypa/popup1.png?rlkey=qnty3eqm2ahkhgzchg8n2dwm2&raw=1" alt="Popup OM" />
+    </a>
+    <button class="close-btn" id="closeBtn">&times;</button>
     <label id="dontShowAgainLabel">
       <input type="checkbox" id="dontShowAgain"> Ne plus afficher
     </label>
   </div>
 </div>
 
-  <script>
-    function closePopup() {
-      document.getElementById("popupModal").style.display = "none";
-      if (document.getElementById("dontShowAgain").checked) {
-        localStorage.setItem("hidePopup", "true");
-      }
+<script>
+  function closePopup() {
+    document.getElementById("popupModal").style.display = "none";
+    if (document.getElementById("dontShowAgain").checked) {
+      localStorage.setItem("hidePopup", "true");
+    }
+  }
+
+  window.addEventListener("load", function () {
+    const popup = document.getElementById("popupModal");
+    const closeBtn = document.getElementById("closeBtn");
+
+    if (!localStorage.getItem("hidePopup")) {
+      setTimeout(function () {
+        popup.style.display = "flex";
+      }, 1000);
     }
 
-    window.addEventListener("load", function () {
-      if (!localStorage.getItem("hidePopup")) {
-        setTimeout(function () {
-          document.getElementById("popupModal").style.display = "flex";
-        }, 1000);
-      }
-    });
-  </script>
+    closeBtn.addEventListener("click", closePopup);
+  });
+</script>
 </body>
 </html>
