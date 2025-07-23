@@ -9,52 +9,40 @@
   <style>
     body {
       font-family: 'Lora', serif;
-      margin: 0;
-      background-color: #082244;
+      background-color: #ffffff;
       color: #222;
     }
 
-    header {
-      background: #082244;
-      color: white;
-    }
-
-    .navbar ul {
-      list-style: none;
-      margin: 0;
-      padding: 20px;
-      display: flex;
-      justify-content: center;
-      gap: 40px;
-    }
-
-    .navbar li a {
-      color: #fff;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    .hero img {
-      width: 100%;
-      max-height: 400px;
-      object-fit: cover;
-      display: block;
-    }
-
-    .container {
-      max-width: 1000px;
+    .projets-content {
+      max-width: 900px;
       margin: 60px auto;
-      padding: 40px;
-      background-color: #ffffff;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 0 30px;
+      line-height: 1.8;
+      font-size: 18px;
+    }
+
+    .projets-content p {
+      margin-bottom: 30px;
+    }
+
+    .projets-content strong {
+      font-weight: bold;
+    }
+
+    .projets-content .accent {
+      font-weight: bold;
+      font-size: 20px;
+      text-align: center;
+      display: block;
+      margin-top: 60px;
+      color: #082244;
     }
 
     .section-alt {
       background-color: #082244;
       color: #ffffff;
-      padding: 40px;
-      border-radius: 8px;
+      padding: 50px 30px;
+      border-radius: 12px;
       margin-bottom: 40px;
     }
 
@@ -66,17 +54,23 @@
       margin: 40px 0;
     }
 
-    .accent {
-      text-align: center;
-      font-weight: bold;
-      color: #082244;
-      font-size: 20px;
-      margin-top: 60px;
+    .hero img {
+      width: 100%;
+      height: auto;
+      max-height: 400px;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .projects-list-wrapper {
+      background-color: #ffffff;
+      padding: 40px 30px;
     }
 
     .projects-list {
-      margin: 60px auto;
       max-width: 1000px;
+      margin: 0 auto;
     }
 
     .project-item {
@@ -93,6 +87,11 @@
       filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
     }
 
+    .project-text {
+      flex: 1;
+      color: #000;
+    }
+
     .project-text h2 {
       margin: 0 0 10px 0;
       font-size: 24px;
@@ -102,17 +101,10 @@
     .project-text p {
       line-height: 1.6;
     }
-
-    footer {
-      background: #082244;
-      color: white;
-      text-align: center;
-      padding: 30px;
-      font-size: 14px;
-    }
   </style>
 </head>
 <body>
+  <!-- NAVIGATION PRINCIPALE -->
   <header>
     <nav class="navbar">
       <ul>
@@ -124,11 +116,13 @@
     </nav>
   </header>
 
+  <!-- BANNIÈRE PROJETS -->
   <section class="hero">
-    <img src="https://www.dropbox.com/scl/fi/fx52jr5xi48v1kwmvzdhl/notre-vision1.png?rlkey=lkgy3aba4dy8tkrzse75v3j2s&raw=1" alt="Nos Projets - BW OM" class="hero-bg">
+    <img src="https://www.dropbox.com/scl/fi/fx52jr5xi48v1kwmvzdhl/notre-vision1.png?rlkey=lkgy3aba4dy8tkrzse75v3j2s&raw=1" alt="Nos Projets - BW OM">
   </section>
 
-  <section class="container">
+  <!-- CONTENU TEXTE PROJETS -->
+  <section class="projets-content">
     <div class="section-alt">
       <p><strong>Au commencement</strong>, il y a une envie simple, directe, essentielle : <strong>faire gagner les joueurs</strong>.</p>
       <p>Non pas un gagnant solitaire au bout d’un suspense interminable, mais <strong>des gagnants tous les jours</strong>, en continu, dans un système pensé pour redistribuer plutôt que retenir.</p>
@@ -155,55 +149,59 @@
       <p><strong>C’est pourquoi nous avons choisi de faire de BW OM la nourrice de tous nos projets.</strong><br>C’est par lui que les premières pierres seront posées.<br>C’est grâce à lui que tout ce que nous avons rêvé de mieux pour demain pourra exister aujourd’hui.</p>
     </div>
 
-    <p class="accent">Et ce n’est que le début.<br>Découvrez comment, grâce à OM, chaque projet de Be With Enterprises trouve sa place dans une dynamique cohérente, joyeuse et porteuse.</p>
+    <p class="accent">Et ce n’est que le début.<br>
+    Découvrez comment, grâce à OM, chaque projet de Be With Enterprises trouve sa place dans une dynamique cohérente, joyeuse et porteuse.</p>
   </section>
 
-  <section class="projects-list">
-    <div class="project-item">
-      <img src="assets/logo-om.png" alt="BW OM" class="project-logo">
-      <div class="project-text">
-        <h2>BW OM</h2>
-        <p>La première loterie mondiale conçue pour redistribuer massivement et durablement, tout en soutenant des projets à impact global. OM est le cœur économique de Better World.</p>
+  <!-- PROJETS CONCRETS -->
+  <section class="projects-list-wrapper">
+    <div class="projects-list">
+      <div class="project-item">
+        <img src="assets/logo-om.png" alt="BW OM" class="project-logo">
+        <div class="project-text">
+          <h2>BW OM</h2>
+          <p>La première loterie mondiale conçue pour redistribuer massivement et durablement, tout en soutenant des projets à impact global. OM est le cœur économique de Better World.</p>
+        </div>
       </div>
-    </div>
-    <div class="project-item">
-      <img src="assets/logo-pandor.png" alt="Pandor" class="project-logo">
-      <div class="project-text">
-        <h2>Pandor</h2>
-        <p>Le premier annuaire éthique et vivant de toutes les entreprises du monde, basé sur la transparence, la réputation réelle et les retours usagers. Un outil de conscience pour la consommation.</p>
+      <div class="project-item">
+        <img src="assets/logo-pandor.png" alt="Pandor" class="project-logo">
+        <div class="project-text">
+          <h2>Pandor</h2>
+          <p>Le premier annuaire éthique et vivant de toutes les entreprises du monde, basé sur la transparence, la réputation réelle et les retours usagers. Un outil de conscience pour la consommation.</p>
+        </div>
       </div>
-    </div>
-    <div class="project-item">
-      <img src="assets/logo-bw-village.png" alt="BW Village" class="project-logo">
-      <div class="project-text">
-        <h2>BW Village</h2>
-        <p>Un écosystème vivant, éducatif et expérimental qui rassemble logements, recherche, éducation, autonomie alimentaire, et innovation sociétale dans un lieu modèle et duplicable.</p>
+      <div class="project-item">
+        <img src="assets/logo-bw-village.png" alt="BW Village" class="project-logo">
+        <div class="project-text">
+          <h2>BW Village</h2>
+          <p>Un écosystème vivant, éducatif et expérimental qui rassemble logements, recherche, éducation, autonomie alimentaire, et innovation sociétale dans un lieu modèle et duplicable.</p>
+        </div>
       </div>
-    </div>
-    <div class="project-item">
-      <img src="assets/logo-bwt.png" alt="BW Token" class="project-logo">
-      <div class="project-text">
-        <h2>BW Token</h2>
-        <p>Une cryptomonnaie stable, responsable, au service des échanges éthiques dans tous les projets Better World. Pensée pour encourager l’économie réelle et humaine.</p>
+      <div class="project-item">
+        <img src="assets/logo-bwt.png" alt="BW Token" class="project-logo">
+        <div class="project-text">
+          <h2>BW Token</h2>
+          <p>Une cryptomonnaie stable, responsable, au service des échanges éthiques dans tous les projets Better World. Pensée pour encourager l’économie réelle et humaine.</p>
+        </div>
       </div>
-    </div>
-    <div class="project-item">
-      <img src="assets/logo-bw-school.png" alt="BW School" class="project-logo">
-      <div class="project-text">
-        <h2>BW School</h2>
-        <p>Un système éducatif totalement repensé, axé sur l’intelligence émotionnelle, la pensée complexe, l’autonomie, la coopération et l’expression des talents.</p>
+      <div class="project-item">
+        <img src="assets/logo-bw-school.png" alt="BW School" class="project-logo">
+        <div class="project-text">
+          <h2>BW School</h2>
+          <p>Un système éducatif totalement repensé, axé sur l’intelligence émotionnelle, la pensée complexe, l’autonomie, la coopération et l’expression des talents.</p>
+        </div>
       </div>
-    </div>
-    <div class="project-item">
-      <img src="assets/logo-une-maman-pour-un-moment.png" alt="Une Maman pour un Moment" class="project-logo">
-      <div class="project-text">
-        <h2>Une Maman pour un Moment</h2>
-        <p>Un réseau de soutien affectif, logistique et humain pour les enfants et familles en transition, basé sur l’accueil, la bienveillance et l’engagement local.</p>
+      <div class="project-item">
+        <img src="assets/logo-une-maman-pour-un-moment.png" alt="Une Maman pour un Moment" class="project-logo">
+        <div class="project-text">
+          <h2>Une Maman pour un Moment</h2>
+          <p>Un réseau de soutien affectif, logistique et humain pour les enfants et familles en transition, basé sur l’accueil, la bienveillance et l’engagement local.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <footer>
+  <footer style="background: #082244; color: white; text-align: center; padding: 30px; font-size: 14px;">
     <p>© 2025 Be With Enterprises. Tous droits réservés. Aucune duplication, même partielle, n’est acceptée. Mentions légales.</p>
   </footer>
 </body>
