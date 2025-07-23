@@ -1,14 +1,151 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nos Projets - BW OM</title>
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: 'Lora', serif;
+      background-color: #ffffff;
+      color: #222;
+    }
+
+    .projets-content {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 30px;
+      line-height: 1.8;
+      font-size: 18px;
+    }
+
+    .projets-content p {
+      margin-bottom: 30px;
+    }
+
+    .projets-content strong {
+      font-weight: bold;
+    }
+
+    .projets-content .accent {
+      font-weight: bold;
+      font-size: 20px;
+      text-align: center;
+      display: block;
+      margin-top: 60px;
+      color: #082244;
+    }
+
+    .section-alt {
+      background-color: #082244;
+      color: #ffffff;
+      padding: 50px 30px;
+      border-radius: 12px;
+      margin-bottom: 40px;
+    }
+
+    .quote {
+      font-style: italic;
+      border-left: 4px solid #082244;
+      padding-left: 20px;
+      color: #444;
+      margin: 40px 0;
+    }
+
+    .hero img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .projects-list {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 30px;
+    }
+
+    .project-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 30px;
+      margin-bottom: 60px;
+    }
+
+    .project-logo {
+      width: 145px;
+      height: auto;
+      flex-shrink: 0;
+      filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
+    }
+
+    .project-text {
+      flex: 1;
+    }
+
+    .project-text h2 {
+      margin: 0 0 10px 0;
+      font-size: 24px;
+      color: #082244;
+    }
+
+    .project-text p {
+      line-height: 1.6;
+    }
+
+    /* Popup Modal */
+    #popupModal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+    }
+
+    #popupModalContent {
+      position: relative;
+      width: 90%;
+      max-width: 480px;
+    }
+
+    #popupModal img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+      cursor: pointer;
+    }
+
+    #popupModal button.close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: transparent;
+      border: none;
+      font-size: 24px;
+      color: white;
+      cursor: pointer;
+    }
+
+    #dontShowAgainLabel {
+      color: white;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      position: absolute;
+      bottom: 10px;
+      left: 15px;
+    }
+  </style>
 </head>
 <body>
-
   <!-- NAVIGATION PRINCIPALE -->
   <header>
     <nav class="navbar">
@@ -20,101 +157,49 @@
       </ul>
     </nav>
   </header>
-
-  <!-- BANNIÈRE -->
+  <!-- BANNIÈRE PROJETS -->
   <section class="hero">
-    <img src="https://www.dropbox.com/scl/fi/fx52jr5xi48v1kwmvzdhl/notre-vision1.png?rlkey=lkgy3aba4dy8tkrzse75v3j2s&raw=1" alt="Nos Projets - BW OM" />
+    <img src="https://www.dropbox.com/scl/fi/fx52jr5xi48v1kwmvzdhl/notre-vision1.png?rlkey=lkgy3aba4dy8tkrzse75v3j2s&raw=1" alt="Nos Projets - BW OM">
   </section>
 
-  <!-- CONTENU PRINCIPAL -->
-  <section class="projets-content">
-    <div class="section-alt">
-      <p><strong>Au commencement</strong>, il y a une envie simple, directe, essentielle : <strong>faire gagner les joueurs</strong>.</p>
-      <p>Non pas un gagnant solitaire au bout d’un suspense interminable, mais <strong>des gagnants tous les jours</strong>, en continu, dans un système pensé pour redistribuer plutôt que retenir.</p>
-      <p><strong>BW OM</strong>, c’est une loterie d’un nouveau genre : <strong>ouverte 24h/24, sans interruption, sans épuisement, sans frustration.</strong><br>
-      Chaque ticket acheté alimente un flux dynamique où chaque tirage devient une opportunité réelle.<br>
-      Pas de limite au nombre de gagnants. Pas de tirage unique.<br>
-      <strong>Des gains justes, fréquents, concrets.</strong></p>
-    </div>
+  <!-- CONTENU TEXTE PROJETS -->
+  <section class="projets-content">[...]</section>
 
-    <div class="quote">
-      Mais derrière ce jeu simple se cache une architecture profonde.<br>
-      <strong>OM n’est pas un jeu parmi d’autres</strong> : c’est <strong>le cœur battant d’un système global</strong>.
-    </div>
+  <!-- PROJETS CONCRETS -->
+  <section class="projects-list">[...]</section>
 
-    <div class="section-alt">
-      <p>BW OM a été conçu pour <strong>générer du mouvement, de la joie, du pouvoir d’achat</strong>, mais aussi pour <strong>soutenir une vision à long terme</strong> : celle d’un monde restauré, digne et durable.</p>
-      <p>Parce que derrière chaque lot, il y a <strong>un projet à nourrir</strong>.<br>
-      Derrière chaque ticket, <strong>un élan pour l’avenir</strong>.</p>
-    </div>
-
-    <div class="quote">
-      <strong>BW Enterprises</strong> porte l’ambition de transformer profondément des secteurs clés : l’éducation, la santé, l’habitat, l’économie, la gouvernance, la culture...<br>
-      Mais pour semer juste, il faut de la terre, de l’eau, de la lumière.
-    </div>
-
-    <div class="section-alt">
-      <p><strong>OM est cette terre fertile. Cette source. Cette lumière.</strong><br>
-      Il rend possible ce que beaucoup croyaient irréalisable.</p>
-      <p><strong>C’est pourquoi nous avons choisi de faire de BW OM la nourrice de tous nos projets.</strong><br>
-      C’est par lui que les premières pierres seront posées.<br>
-      C’est grâce à lui que tout ce que nous avons rêvé de mieux pour demain pourra exister aujourd’hui.</p>
-    </div>
-
-    <p class="accent">Et ce n’est que le début.<br>
-    Découvrez comment, grâce à OM, chaque projet de Be With Enterprises trouve sa place dans une dynamique cohérente, joyeuse et porteuse.</p>
-  </section>
-
-  <!-- LISTE DES PROJETS -->
-  <section class="projects-list">
-    <div class="project-item">
-      <img src="assets/logo-om.png" alt="BW OM" class="project-logo">
-      <div class="project-text">
-        <h2>BW OM</h2>
-        <p>La première loterie mondiale conçue pour redistribuer massivement et durablement, tout en soutenant des projets à impact global. OM est le cœur économique de Better World.</p>
-      </div>
-    </div>
-    <div class="project-item">
-      <img src="assets/logo-pandor.png" alt="Pandor" class="project-logo">
-      <div class="project-text">
-        <h2>Pandor</h2>
-        <p>Le premier annuaire éthique et vivant de toutes les entreprises du monde, basé sur la transparence, la réputation réelle et les retours usagers. Un outil de conscience pour la consommation.</p>
-      </div>
-    </div>
-    <div class="project-item">
-      <img src="assets/logo-bw-village.png" alt="BW Village" class="project-logo">
-      <div class="project-text">
-        <h2>BW Village</h2>
-        <p>Un écosystème vivant, éducatif et expérimental qui rassemble logements, recherche, éducation, autonomie alimentaire, et innovation sociétale dans un lieu modèle et duplicable.</p>
-      </div>
-    </div>
-    <div class="project-item">
-      <img src="assets/logo-bwt.png" alt="BW Token" class="project-logo">
-      <div class="project-text">
-        <h2>BW Token</h2>
-        <p>Une cryptomonnaie stable, responsable, au service des échanges éthiques dans tous les projets Better World. Pensée pour encourager l’économie réelle et humaine.</p>
-      </div>
-    </div>
-    <div class="project-item">
-      <img src="assets/logo-bw-school.png" alt="BW School" class="project-logo">
-      <div class="project-text">
-        <h2>BW School</h2>
-        <p>Un système éducatif totalement repensé, axé sur l’intelligence émotionnelle, la pensée complexe, l’autonomie, la coopération et l’expression des talents.</p>
-      </div>
-    </div>
-    <div class="project-item">
-      <img src="assets/logo-une-maman-pour-un-moment.png" alt="Une Maman pour un Moment" class="project-logo">
-      <div class="project-text">
-        <h2>Une Maman pour un Moment</h2>
-        <p>Un réseau de soutien affectif, logistique et humain pour les enfants et familles en transition, basé sur l’accueil, la bienveillance et l’engagement local.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- PIED DE PAGE -->
   <footer style="background: #082244; color: white; text-align: center; padding: 30px; font-size: 14px;">
     <p>© 2025 Be With Enterprises. Tous droits réservés. Aucune duplication, même partielle, n’est acceptée. Mentions légales.</p>
   </footer>
 
+  <!-- POPUP MODAL -->
+  <div id="popupModal" style="display: none;">
+    <div id="popupModalContent">
+      <a href="projets.html">
+        <img src="https://www.dropbox.com/scl/fi/p3v4l5udooeb5gcn0ffs8/popup.png?rlkey=gtfh3wdqjdr80rmltz1kf3112&raw=1" alt="Popup OM">
+      </a>
+      <button class="close-btn" onclick="closePopup()">&times;</button>
+      <label id="dontShowAgainLabel">
+        <input type="checkbox" id="dontShowAgain"> Ne plus afficher
+      </label>
+    </div>
+  </div>
+
+  <script>
+    function closePopup() {
+      document.getElementById('popupModal').style.display = 'none';
+      if (document.getElementById('dontShowAgain').checked) {
+        localStorage.setItem('hidePopup', 'true');
+      }
+    }
+
+    window.addEventListener('load', function () {
+      if (!localStorage.getItem('hidePopup')) {
+        setTimeout(function () {
+          document.getElementById('popupModal').style.display = 'flex';
+        }, 1000);
+      }
+    });
+  </script>
 </body>
 </html>
