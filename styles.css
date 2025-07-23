@@ -43,7 +43,7 @@ header {
 /* Hero Banner */
 .hero {
   width: 100%;
-  height: 300px; /* ✅ Ajout ou modification ici pour réduire la hauteur */
+  height: 280px; /* ou toute autre hauteur réduite */
   overflow: hidden;
   position: relative;
 }
@@ -52,8 +52,8 @@ header {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center center; /* CENTRAGE du visuel à l’intérieur */
   display: block;
-  object-position: center center; /* ✅ CENTRAGE horizontal et vertical */
 }
 
 .hero-logo {
