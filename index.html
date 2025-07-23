@@ -19,6 +19,10 @@
       z-index: 9999;
     }
 
+    #popupModal.active {
+      display: flex;
+    }
+
     #popupModalContent {
       position: relative;
       width: 90%;
@@ -51,8 +55,8 @@
       align-items: center;
       gap: 6px;
       position: absolute;
-      bottom: 10px;
-      left: 15px;
+      bottom: 12px;
+      left: 16px;
     }
 
     .vision {
@@ -93,8 +97,8 @@
   </header>
 
   <section class="hero">
-  <img src="https://www.dropbox.com/scl/fi/78d62mkj8yu02qmndzsaj/Capture-d-cran-2025-07-23-16.56.24.png?rlkey=91m2c8r0zjpxa53mfm96vnnfv&raw=1" alt="Bannière Be With Enterprises" class="hero-bg">
-  <img src="https://www.dropbox.com/scl/fi/wcx18na9bcn8vxb0iect1/5EAE0391-39AB-4A9E-AB5A-5BD63E77D2E0.png?rlkey=cez7yvtl9k2m3zpoa2it9p84h&raw=1" alt="Logo Be With" style="position: absolute; top: 40px; left: 40px; max-height: 120px; filter: drop-shadow(0 8px 12px rgba(0,0,0,0.3));" />
+    <img src="https://www.dropbox.com/scl/fi/78d62mkj8yu02qmndzsaj/Capture-d-cran-2025-07-23-16.56.24.png?rlkey=91m2c8r0zjpxa53mfm96vnnfv&raw=1" alt="Bannière Be With Enterprises" class="hero-bg">
+    <img src="https://www.dropbox.com/scl/fi/wcx18na9bcn8vxb0iect1/5EAE0391-39AB-4A9E-AB5A-5BD63E77D2E0.png?rlkey=cez7yvtl9k2m3zpoa2it9p84h&raw=1" alt="Logo Be With" style="position: absolute; top: 40px; left: 40px; max-height: 120px; filter: drop-shadow(0 8px 12px rgba(0,0,0,0.3));" />
   </section>
 
   <div class="container">
@@ -164,36 +168,38 @@
   </footer>
 
   <!-- POPUP -->
-<div id="popupModal">
-  <div id="popupModalContent">
-    <a href="projets.html" target="_blank">
-      <img src="https://www.dropbox.com/scl/fi/rsj78b1e9xrnatx4k0ypa/popup1.png?rlkey=qnty3eqm2ahkhgzchg8n2dwm2&raw=1" alt="Popup OM">
-    </a>
-    <button class="close-btn" id="closeBtn">&times;</button>
-    <label><input type="checkbox" id="dontShowAgain"> Ne plus afficher</label>
+  <div id="popupModal">
+    <div id="popupModalContent">
+      <a href="projets.html" target="_blank">
+        <img src="https://www.dropbox.com/scl/fi/rsj78b1e9xrnatx4k0ypa/popup1.png?rlkey=qnty3eqm2ahkhgzchg8n2dwm2&raw=1" alt="Popup OM">
+      </a>
+      <button class="close-btn" id="closeBtn">&times;</button>
+      <label id="dontShowAgainLabel">
+        <input type="checkbox" id="dontShowAgain"> Ne plus afficher
+      </label>
+    </div>
   </div>
-</div>
 
-<script>
-  function closePopup() {
-    document.getElementById("popupModal").classList.remove("active");
-    if (document.getElementById("dontShowAgain").checked) {
-      localStorage.setItem("hidePopup", "true");
-    }
-  }
-
-  window.addEventListener("load", function () {
-    const popup = document.getElementById("popupModal");
-    const closeBtn = document.getElementById("closeBtn");
-
-    if (!localStorage.getItem("hidePopup")) {
-      setTimeout(() => {
-        popup.classList.add("active");
-      }, 1000);
+  <script>
+    function closePopup() {
+      document.getElementById("popupModal").classList.remove("active");
+      if (document.getElementById("dontShowAgain").checked) {
+        localStorage.setItem("hidePopup", "true");
+      }
     }
 
-    closeBtn.addEventListener("click", closePopup);
-  });
-</script>
+    window.addEventListener("load", function () {
+      const popup = document.getElementById("popupModal");
+      const closeBtn = document.getElementById("closeBtn");
+
+      if (!localStorage.getItem("hidePopup")) {
+        setTimeout(() => {
+          popup.classList.add("active");
+        }, 1000);
+      }
+
+      closeBtn.addEventListener("click", closePopup);
+    });
+  </script>
 </body>
 </html>
