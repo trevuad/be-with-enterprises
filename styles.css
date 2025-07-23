@@ -53,6 +53,7 @@ header {
   height: 100%;
   object-fit: cover;
   display: block;
+  object-position: center center; /* ✅ CENTRAGE horizontal et vertical */
 }
 
 .hero-logo {
