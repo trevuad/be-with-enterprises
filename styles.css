@@ -1,257 +1,86 @@
-/* Base générale */
+/* === BASE GÉNÉRALE === */
 body {
-  margin: 0;
-  font-family: "Palatino Linotype", serif;
+  font-family: 'Lora', serif;
   background-color: #ffffff;
-  color: #000;
-  line-height: 1.6;
+  color: #222;
+  margin: 0;
+  padding: 0;
 }
 
-a {
-  color: #fff;
-  text-decoration: none;
-}
-
-h1, h2, h3 {
-  font-weight: bold;
-}
-
-p {
-  margin: 0 0 20px 0;
-}
-
-/* Navbar */
-header {
-  background: #082244;
-  color: #fff;
-}
-
+/* === NAVIGATION === */
 .navbar ul {
   list-style: none;
   margin: 0;
   padding: 20px;
+  background-color: #082244;
   display: flex;
   justify-content: center;
   gap: 40px;
 }
 
-.navbar li a {
-  color: #fff;
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
   font-weight: bold;
+  font-size: 16px;
 }
 
-/* Hero Banner */
-.hero {
-  position: relative;
+/* === BANNIÈRE HERO === */
+.hero img {
   width: 100%;
-}
-
-.hero-bg {
-  width: 100%;
+  height: auto;
   display: block;
 }
 
-.hero-logo {
-  position: absolute;
-  top: 40px;
-  left: 40px;
-  width: 240px;
-  height: auto;
-  filter: drop-shadow(0 8px 12px rgba(0,0,0,0.3));
+/* === CONTENU PROJETS === */
+.projets-content {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 30px;
+  line-height: 1.8;
+  font-size: 18px;
 }
 
-/* Conteneur principal */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 40px;
-  background: #F9F6EB;
-  border-left: 30px solid #082244;
-  border-right: 30px solid #082244;
+.projets-content p {
+  margin-bottom: 30px;
 }
 
-/* Titre d'intro */
-.intro-title h1 {
-  font-size: 42px;
+.projets-content strong {
+  font-weight: bold;
+}
+
+.projets-content .accent {
+  font-weight: bold;
+  font-size: 20px;
   text-align: center;
+  display: block;
+  margin-top: 60px;
+  color: #082244;
+}
+
+/* === SECTIONS ALTÉRNÉES === */
+.section-alt {
+  background-color: #082244;
+  color: #ffffff;
+  padding: 50px 30px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+
+/* === CITATIONS === */
+.quote {
+  font-style: italic;
+  border-left: 4px solid #082244;
+  padding-left: 20px;
+  color: #444;
   margin: 40px 0;
 }
 
-/* Vision - nouvelle bannière */
-.vision-banner {
-  background: #082244;
-  color: #fff;
-  padding: 60px 40px;
-}
-
-.vision-banner-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 40px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.vision-banner-text {
-  flex: 1 1 500px;
-  padding-right: 20px;
-}
-
-.vision-banner-text h2 {
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-
-.vision-banner-text p {
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 1.6;
-}
-
-.vision-banner-image {
-  flex: 1 1 400px;
-  text-align: center;
-}
-
-.vision-banner-image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-}
-
-.vision-banner .btn {
-  background: #ffffff;
-  color: #000000;
-}
-
-/* Symbols */
-.symbols {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 30px;
-  margin: 60px 0;
-}
-
-.symbol-item {
-  text-align: center;
-  flex: 1 1 200px;
-}
-
-.symbol-item img {
-  width: 80px;
-  height: auto;
-  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.2));
-}
-
-.symbol-item h3 {
-  margin-top: 15px;
-}
-
-.symbol-item p {
-  margin-top: 10px;
-}
-
-/* Frise chronologique */
-.timeline {
-  border-top: 2px solid #000;
-  margin: 60px 0;
-  text-align: center;
-}
-
-.timeline span {
-  background: #F9F6EB;
-  padding: 0 20px;
-  font-weight: bold;
-  position: relative;
-  top: -14px;
-}
-
-/* Initiatives */
-.initiatives {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 40px;
-}
-
-.initiatives-image {
-  flex: 1 1 100%;
-  text-align: center;
-}
-
-.initiatives-image img {
-  max-width: 800px;
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  border-radius: 8px;
-}
-
-.initiatives-text {
-  flex: 1 1 100%;
-  text-align: center;
-}
-
-.initiatives-text h2 {
-  margin-bottom: 20px;
-}
-
-.initiatives-text p {
-  margin-bottom: 20px;
-}
-
-/* Nos Projets (Accueil) */
-.projects h2 {
-  text-align: center;
-  font-size: 36px;
-  margin: 40px 0 20px 0;
-}
-
-.project-logos {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-
-.project-logos img {
-  width: 120px;
-  height: auto;
-  filter: drop-shadow(0 5px 10px rgba(0,0,0,0.3));
-}
-
-/* Boutons génériques */
-.btn {
-  display: inline-block;
-  background: #082244;
-  color: #fff;
-  padding: 12px 30px;
-  margin-top: 20px;
-  border-radius: 4px;
-}
-
-.btn-wrapper {
-  text-align: center;
-  margin-top: 20px;
-}
-
-/* Footer */
-footer {
-  background: #082244;
-  color: #fff;
-  text-align: center;
-  padding: 30px;
-  font-size: 14px;
-}
-
-/* Nos Projets détaillés */
+/* === LISTE DE PROJETS === */
 .projects-list {
-  margin: 60px 0;
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 30px;
 }
 
 .project-item {
@@ -272,65 +101,26 @@ footer {
   flex: 1;
 }
 
-.projects-list h2 {
+.project-text h2 {
   margin: 0 0 10px 0;
   font-size: 24px;
+  color: #082244;
 }
 
-.projects-list p {
+.project-text p {
   line-height: 1.6;
 }
 
-.initiatives, .projects {
-  margin-bottom: 40px;
-}
-
-/* Section Contact */
-.contact-section {
-  padding: 60px 20px;
-  max-width: 800px;
-  margin: 0 auto;
+/* === PIED DE PAGE === */
+footer {
+  background-color: #082244;
+  color: white;
   text-align: center;
+  padding: 30px;
+  font-size: 14px;
 }
 
-.contact-section h1 {
-  margin-bottom: 30px;
-}
-
-.contact-section form {
-  text-align: left;
-}
-
-.contact-section label {
-  display: block;
-  margin-top: 15px;
-  font-weight: bold;
-}
-
-.contact-section input,
-.contact-section textarea {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-.contact-section textarea {
-  min-height: 150px;
-  resize: vertical;
-}
-
-.contact-section button.btn {
-  display: block;
-  margin: 30px auto 0 auto;
-}
-
-/* ========================================= */
-/* ===           POPUP STYLING           === */
-/* ========================================= */
-
-/* === POPUP OVERLAY ET FENÊTRE === */
+/* === POPUP === */
 #popupModal {
   display: none;
   position: fixed;
@@ -338,11 +128,11 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(8, 34, 68, 0.75); /* bleu foncé transparent */
+  background: rgba(8, 34, 68, 0.75);
   backdrop-filter: blur(4px);
   justify-content: center;
   align-items: center;
-  z-index: 9998;
+  z-index: 9999;
 }
 
 #popupModalContent {
@@ -374,7 +164,6 @@ footer {
   margin-right: 6px;
 }
 
-/* Bouton de fermeture */
 #popupModal .close-btn {
   position: absolute;
   top: 10px;
@@ -384,14 +173,12 @@ footer {
   font-size: 28px;
   color: #444;
   cursor: pointer;
-  transition: color 0.2s;
 }
 
 #popupModal .close-btn:hover {
   color: #000;
 }
 
-/* Animation */
 @keyframes fadeIn {
   from {
     opacity: 0;
