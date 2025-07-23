@@ -163,40 +163,34 @@
     <p>© 2025 BW ENTERPRISES. Tous droits réservés. Aucune duplication même partielle n’est acceptée. Mentions légales.</p>
   </footer>
 
-  <!-- POPUP MODAL -->
-<div id="popupModal">
-  <div id="popupModalContent">
-    <a href="projets.html">
-      <img src="https://www.dropbox.com/scl/fi/rsj78b1e9xrnatx4k0ypa/popup1.png?rlkey=qnty3eqm2ahkhgzchg8n2dwm2&raw=1" alt="Popup OM">
-    </a>
-    <button class="close-btn" onclick="closePopup()">&times;</button>
-    <label id="dontShowAgainLabel">
-      <input type="checkbox" id="dontShowAgain"> Ne plus afficher
-    </label>
+  <!-- POPUP -->
+  <div id="popupModal">
+    <div id="popupModalContent">
+      <a href="projets.html">
+        <img src="https://www.dropbox.com/scl/fi/rsj78b1e9xrnatx4k0ypa/popup1.png?rlkey=qnty3eqm2ahkhgzchg8n2dwm2&raw=1" alt="Popup OM">
+      </a>
+      <button class="close-btn" onclick="closePopup()">&times;</button>
+      <label id="dontShowAgainLabel">
+        <input type="checkbox" id="dontShowAgain"> Ne plus afficher
+      </label>
+    </div>
   </div>
-</div>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const popup = document.getElementById("popupModal");
-    const closeBtn = document.querySelector(".close-btn");
-    const dontShowAgainCheckbox = document.getElementById("dontShowAgain");
-
-    if (!localStorage.getItem("hidePopup")) {
-      setTimeout(() => {
-        popup.style.display = "flex";
-      }, 1000);
+  <script>
+    function closePopup() {
+      document.getElementById("popupModal").style.display = "none";
+      if (document.getElementById("dontShowAgain").checked) {
+        localStorage.setItem("hidePopup", "true");
+      }
     }
 
-    if (closeBtn) {
-      closeBtn.addEventListener("click", () => {
-        popup.style.display = "none";
-        if (dontShowAgainCheckbox.checked) {
-          localStorage.setItem("hidePopup", "true");
-        }
-      });
-    }
-  });
-</script>
+    window.addEventListener("load", function () {
+      if (!localStorage.getItem("hidePopup")) {
+        setTimeout(function () {
+          document.getElementById("popupModal").style.display = "flex";
+        }, 1000);
+      }
+    });
+  </script>
 </body>
 </html>
