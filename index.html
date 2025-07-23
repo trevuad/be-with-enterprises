@@ -6,6 +6,7 @@
   <title>BW ENTERPRISES</title>
   <link rel="stylesheet" href="styles.css" />
   <style>
+    /* === POPUP STYLE === */
     #popupModal {
       position: fixed;
       top: 0;
@@ -59,6 +60,7 @@
       left: 16px;
     }
 
+    /* === SECTIONS EXISTANTES === */
     .vision {
       display: flex;
       flex-wrap: wrap;
@@ -167,7 +169,7 @@
     <p>© 2025 BW ENTERPRISES. Tous droits réservés. Aucune duplication même partielle n’est acceptée. Mentions légales.</p>
   </footer>
 
-  <!-- POPUP -->
+  <!-- === POPUP HTML === -->
   <div id="popupModal">
     <div id="popupModalContent">
       <a href="projets.html" target="_blank">
@@ -180,17 +182,12 @@
     </div>
   </div>
 
+  <!-- === SCRIPT === -->
   <script>
-    function closePopup() {
-      document.getElementById("popupModal").classList.remove("active");
-      if (document.getElementById("dontShowAgain").checked) {
-        localStorage.setItem("hidePopup", "true");
-      }
-    }
-
-    window.addEventListener("load", function () {
+    document.addEventListener("DOMContentLoaded", function () {
       const popup = document.getElementById("popupModal");
       const closeBtn = document.getElementById("closeBtn");
+      const dontShowAgain = document.getElementById("dontShowAgain");
 
       if (!localStorage.getItem("hidePopup")) {
         setTimeout(() => {
@@ -198,7 +195,12 @@
         }, 1000);
       }
 
-      closeBtn.addEventListener("click", closePopup);
+      closeBtn.addEventListener("click", () => {
+        popup.classList.remove("active");
+        if (dontShowAgain.checked) {
+          localStorage.setItem("hidePopup", "true");
+        }
+      });
     });
   </script>
 </body>
