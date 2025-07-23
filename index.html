@@ -1,42 +1,113 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BW ENTERPRISES</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil - BW OM</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
   <style>
     body {
+      font-family: 'Lora', serif;
       background-color: #ffffff;
+      color: #222;
     }
-    .hero {
-      position: relative;
+
+    header {
+      background: #082244;
+      padding: 20px 0;
     }
-    .hero img.banner {
+
+    .navbar ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .navbar li a {
+      color: #fff;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .hero img {
       width: 100%;
       height: auto;
       display: block;
     }
-    .hero img.logo {
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      height: 100px;
-      object-fit: contain;
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 30px;
+      line-height: 1.8;
+      font-size: 18px;
     }
-    .intro-title {
+
+    footer {
+      background: #082244;
+      color: white;
       text-align: center;
-      padding: 40px 20px 20px;
+      padding: 30px;
+      font-size: 14px;
     }
-    .intro-title h1 {
-      font-size: 1.8em;
-      line-height: 1.5;
+
+    /* Popup Modal */
+    #popupModal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+    }
+
+    #popupModalContent {
+      position: relative;
+      width: 90%;
+      max-width: 480px;
+    }
+
+    #popupModal img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+      cursor: pointer;
+    }
+
+    #popupModal button.close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: transparent;
+      border: none;
+      font-size: 24px;
+      color: white;
+      cursor: pointer;
+    }
+
+    #dontShowAgainLabel {
+      color: white;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      position: absolute;
+      bottom: 10px;
+      left: 15px;
     }
   </style>
 </head>
 <body>
-
-  <!-- Header -->
+  <!-- NAVIGATION PRINCIPALE -->
   <header>
     <nav class="navbar">
       <ul>
@@ -48,137 +119,51 @@
     </nav>
   </header>
 
-  <!-- Hero -->
+  <!-- BANNIÈRE ACCUEIL -->
   <section class="hero">
-    <!-- Bannière -->
-    <img src="https://www.dropbox.com/scl/fi/svpn0igq0ijzlidhbpqxb/2BC93A59-1608-406E-87C3-2778CE98EF5E.png?rlkey=nxzbji8s7jtkvdla7ons7p09h&st=r0jwz3s2&raw=1"
-         alt="Bannière Be With"
-         class="banner" />
-    <!-- Logo en haut à gauche -->
-    <img src="https://www.dropbox.com/scl/fi/wcx18na9bcn8vxb0iect1/5EAE0391-39AB-4A9E-AB5A-5BD63E77D2E0.png?rlkey=cez7yvtl9k2m3zpoa2it9p84h&st=21bzrtvp&raw=1"
-         alt="Logo Be With"
-         class="logo" />
+    <img src="https://www.dropbox.com/scl/fi/svpn0igq0ijzlidhbpqxb/2BC93A59-1608-406E-87C3-2778CE98EF5E.png?raw=1" alt="Bannière BW OM">
   </section>
 
-  <!-- Contenu -->
-  <div class="container">
+  <!-- CONTENU TEXTE ACCUEIL -->
+  <section class="container">
+    <h1 style="text-align:center; margin-bottom: 30px;">Projet BW OM, la révolution du jeu !</h1>
+    <p style="text-align:center; font-weight: bold; font-size: 20px;">
+      La première loterie mondiale qui relance le pouvoir d'achat !
+    </p>
+  </section>
 
-    <!-- Nouveau titre -->
-    <section class="intro-title">
-      <h1>
-        ONE MILLION, la révolution du jeu !<br />
-        La première loterie mondiale qui relance le pouvoir d'achat !<br />
-        Le seul jeu au monde conçu pour que les joueurs gagnent le plus souvent possible.
-      </h1>
-    </section>
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Be With Enterprises. Tous droits réservés. Aucune duplication, même partielle, n’est acceptée. Mentions légales.</p>
+  </footer>
 
-    <!-- Bloc vision -->
-   <section class="vision-banner">
-  <div class="vision-banner-content">
-    <div class="vision-banner-text">
-      <h2>Notre premier projet :</h2>
-      <p>
-        Première loterie mondiale qui a pour vocation de faire gagner les joueurs.<br /><br />
-        1 million de participants / un nombre de tirages journaliers illimité !<br /><br />
-        Des lots qui ont vocation à être tous distribués et le plus souvent possible !!
-      </p>
-      <a href="vision.html" class="btn">Découvrir</a>
-    </div>
-    <div class="vision-banner-image">
-      <img src="https://www.dropbox.com/scl/fi/sbkfren03cc6y00t5spqo/Image-lotery.png?rlkey=guole8jy5b5wl3fl6kgyuohm0&st=y1b913mh&raw=1" alt="Visuel BW OM" />
-    </div>
-  </div>
-</section>
-
-    <!-- Symbols -->
-    <section class="symbols">
-      <div class="symbol-item">
-        <img src="assets/symbole-systemie.png" alt="Systémie" />
-        <h3>Systémie.</h3>
-        <p>OM ne se contente pas de redistribuer des gains, il réinvente les connexions. Chaque joueur, 
-          chaque tirage, chaque lot est un nœud dans une dynamique vivante et fluide. 
-          Ici, tout est relié : l’impact social, l’équilibre économique, le plaisir du jeu et la relance collective du pouvoir d’achat. 
-          Rien n’est laissé au hasard, même dans le jeu.</p>
-      </div>
-      <div class="symbol-item">
-        <img src="assets/symbole-transparence.png" alt="Transparence" />
-        <h3>Transparence.</h3>
-        <p>Chaque tirage, chaque lot, chaque donnée : tout est traçable, justifiable, accessible. 
-          OM n’a rien à cacher car tout a été conçu pour être montré. Les règles sont simples, 
-          les mécanismes sont visibles, et nos intentions ne se dissimulent pas derrière des promesses floues. 
-          La confiance n’est pas une posture, c’est une exigence portée par la clarté de chaque action.</p>
-      </div>
-      <div class="symbol-item">
-        <img src="assets/symbole-harmonie.png" alt="Harmonie" />
-        <h3>Harmonie.</h3>
-        <p>OM réconcilie l’envie de jouer, le besoin de gagner et le désir de contribuer. 
-          Ni excès, ni exploitation : un équilibre fin entre chance et justice, entre plaisir individuel et bien commun. 
-          Tout a été pensé pour que l’expérience soit fluide, respectueuse et joyeusement alignée avec une dynamique collective plus grande. 
-          Gagner devient un acte harmonieux, et non une rupture.</p>
-      </div>
-      <div class="symbol-item">
-        <img src="assets/symbole-developpement.png" alt="Développement" />
-        <h3>Développement.</h3>
-        <p>OM n'est pas une fin, c’est un élan. Chaque participation alimente un cercle vertueux : du pouvoir d’achat relancé, 
-          des projets soutenus, des communautés renforcées. Le développement ici n’est pas basé sur l’accumulation, 
-          mais sur la circulation équitable des ressources. 
-          Gagner, c’est faire grandir quelque chose — en soi, autour de soi, et bien au-delà du jeu.</p>
-      </div>
-    </section>
-
-    <!-- Frise -->
-    <section class="timeline">
-      <span>Création de BW</span>
-    </section>
-
-    <!-- Initiatives -->
-    <section class="initiatives">
-      <div class="initiatives-image">
-        <img src="assets/image-3.png" alt="Initiatives" />
-      </div>
-      <div class="initiatives-text">
-        <h2>Derrière chaque vision, des initiatives concrètes.</h2>
-        <p>Nos projets traduisent nos engagements en actions réelles et impactantes, portées par un réseau d’acteurs unis par une même exigence d’intégrité et de synergie.
-        Découvrez comment chaque pôle contribue à bâtir un monde plus juste et plus vivant.</p>
-      </div>
-    </section>
-
-    <!-- Projets -->
-    <section class="projects">
-      <h2>Nos Projets</h2>
-      <div class="project-logos">
-        <img src="assets/logo-om.png" alt="BW OM" />
-        <img src="assets/logo-pandor.png" alt="Pandor" />
-        <img src="assets/logo-une-maman-pour-un-moment.png" alt="Une Maman Pour Un Moment" />
-        <img src="assets/logo-bwt.png" alt="BWT" />
-        <img src="assets/logo-bw-village.png" alt="BW Village" />
-        <img src="assets/logo-bw-school.png" alt="BW School" />
-      </div>
-      <!-- Bouton centré sous les logos -->
-      <div class="btn-wrapper">
-        <a href="projets.html" class="btn">En Savoir Plus</a>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-      <p>© 2025 BW ENTERPRISES. Tous droits réservés. Aucune duplication même partielle n’est acceptée. Mentions légales.</p>
-    </footer>
-<!-- POPUP MODAL -->
-  <div id="popupModal" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.6); display: flex; align-items: center; justify-content: center; z-index: 9999;">
-    <div style="position: relative; width: 90%; max-width: 500px;">
+  <!-- POPUP MODAL -->
+  <div id="popupModal" style="display: none;">
+    <div id="popupModalContent">
       <a href="projets.html">
-        <img src="https://www.dropbox.com/scl/fi/p3v4l5udooeb5gcn0ffs8/popup.png?rlkey=gtfh3wdqjdr80rmltz1kf3112&raw=1" alt="Popup OM" style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.4);">
+        <img src="https://www.dropbox.com/scl/fi/p3v4l5udooeb5gcn0ffs8/popup.png?raw=1" alt="Popup OM">
       </a>
-      <button onclick="document.getElementById('popupModal').style.display='none'" style="position: absolute; top: 10px; right: 10px; background: transparent; border: none; font-size: 24px; color: white; cursor: pointer;">&times;</button>
+      <button class="close-btn" onclick="closePopup()">&times;</button>
+      <label id="dontShowAgainLabel">
+        <input type="checkbox" id="dontShowAgain"> Ne plus afficher
+      </label>
     </div>
   </div>
 
   <script>
-    window.addEventListener('load', function() {
-      setTimeout(function() {
-        document.getElementById('popupModal').style.display = 'flex';
-      }, 1000);
+    function closePopup() {
+      document.getElementById('popupModal').style.display = 'none';
+      if (document.getElementById('dontShowAgain').checked) {
+        localStorage.setItem('hidePopupIndex', 'true');
+      }
+    }
+
+    window.addEventListener('load', function () {
+      if (!localStorage.getItem('hidePopupIndex')) {
+        setTimeout(function () {
+          document.getElementById('popupModal').style.display = 'flex';
+        }, 1000);
+      }
     });
   </script>
 </body>
