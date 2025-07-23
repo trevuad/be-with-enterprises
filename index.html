@@ -181,22 +181,31 @@
     const closeBtn = document.querySelector(".close-btn");
     const dontShowAgainCheckbox = document.getElementById("dontShowAgain");
 
-    if (!localStorage.getItem("hidePopup") && popup) {
+    if (!popup) {
+      console.error("Élément #popupModal introuvable.");
+      return;
+    }
+
+    if (!localStorage.getItem("hidePopup")) {
       setTimeout(() => {
         popup.style.display = "flex";
+        console.log("Popup affiché");
       }, 1000);
+    } else {
+      console.log("Popup masqué (stockage local actif)");
     }
 
     if (closeBtn) {
       closeBtn.addEventListener("click", () => {
         popup.style.display = "none";
-        if (dontShowAgainCheckbox.checked) {
+        if (dontShowAgainCheckbox && dontShowAgainCheckbox.checked) {
           localStorage.setItem("hidePopup", "true");
         }
       });
+    } else {
+      console.error("Bouton de fermeture non trouvé");
     }
   });
 </script>
-
 </body>
 </html>
