@@ -55,7 +55,7 @@ header {
   position: absolute;
   top: 40px;
   left: 40px;
-  width: 240px; /* 120px x2 pour +100% */
+  width: 240px;
   height: auto;
   filter: drop-shadow(0 8px 12px rgba(0,0,0,0.3));
 }
@@ -77,37 +77,49 @@ header {
   margin: 40px 0;
 }
 
-/* Vision bloc : ajustement image et texte */
-.vision {
+/* Vision nouvelle bannière */
+.vision-banner {
+  background: #004C99;
+  color: #fff;
+  padding: 60px 40px;
+}
+
+.vision-banner-content {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
   gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.vision-text {
-  flex: 1;
-  min-width: 300px;
-  padding-left: 60px; 
+.vision-banner-text {
+  flex: 1 1 500px;
+  padding-right: 20px;
 }
 
-.vision-text p {
+.vision-banner-text h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.vision-banner-text p {
+  font-size: 18px;
   font-weight: bold;
+  line-height: 1.6;
 }
 
-.vision-image {
-  flex: 1;
+.vision-banner-image {
+  flex: 1 1 400px;
   text-align: center;
 }
 
-.vision-image img {
-  max-width: 500px;
-  width: 100%;
+.vision-banner-image img {
+  max-width: 100%;
   height: auto;
-  display: block;
-  margin: 0 auto;
   border-radius: 8px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
 /* Symbols */
@@ -203,7 +215,7 @@ header {
 }
 
 .project-logos img {
-  width: 120px; /* AGRANDI de 50% */
+  width: 120px;
   height: auto;
   filter: drop-shadow(0 5px 10px rgba(0,0,0,0.3));
 }
@@ -230,34 +242,6 @@ footer {
   text-align: center;
   padding: 30px;
   font-size: 14px;
-}
-
-/* Vision Page - bannière finale */
-.vision-banner-end {
-  position: relative;
-  margin: 60px 0 0 0;
-}
-
-.vision-banner-wrapper {
-  position: relative;
-  overflow: hidden;
-  border-radius: 8px;
-}
-
-.vision-footer-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.vision-footer-text {
-  position: absolute;
-  top: 20px;
-  left: 40px;
-  right: 40px;
-  color: #fff;
-  font-weight: bold;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
 }
 
 /* Nos Projets détaillés */
@@ -298,9 +282,9 @@ footer {
 
 /* Section Contact */
 .contact-section {
-  padding: 60px 20px;   /* Ajoute un peu de padding latéral */
-  max-width: 800px;     /* Limite la largeur du bloc pour qu'il reste centré */
-  margin: 0 auto;       /* Centre le bloc dans la container */
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -334,7 +318,5 @@ footer {
 
 .contact-section button.btn {
   display: block;
-  margin: 30px auto 0 auto; /* Centre le bouton sous le formulaire */
+  margin: 30px auto 0 auto;
 }
-
-
