@@ -54,10 +54,33 @@
       bottom: 10px;
       left: 15px;
     }
+
+    .vision {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .vision-image {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+
+    .vision-image img {
+      max-width: 350px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+
+    .vision-text {
+      flex: 2;
+    }
   </style>
 </head>
 <body>
-  <!-- Barre de navigation -->
   <header>
     <nav class="navbar">
       <ul>
@@ -69,25 +92,20 @@
     </nav>
   </header>
 
-  <!-- Hero -->
   <section class="hero">
-    <img src="https://www.dropbox.com/scl/fi/svpn0igq0ijzlidhbpqxb/2BC93A59-1608-406E-87C3-2778CE98EF5E.png?rlkey=nxzbji8s7jtkvdla7ons7p09h&st=r0jwz3s2&raw=1" alt="Bannière Be With" style="width: 100%; height: auto;" />
-    <img src="https://www.dropbox.com/scl/fi/wcx18na9bcn8vxb0iect1/5EAE0391-39AB-4A9E-AB5A-5BD63E77D2E0.png?rlkey=cez7yvtl9k2m3zpoa2it9p84h&st=21bzrtvp&raw=1" alt="Logo Be With" style="position: absolute; top: 40px; left: 40px; max-height: 120px; filter: drop-shadow(0 8px 12px rgba(0,0,0,0.3));" />
+    <img src="https://www.dropbox.com/scl/fi/svpn0igq0ijzlidhbpqxb/2BC93A59-1608-406E-87C3-2778CE98EF5E.png?rlkey=nxzbji8s7jtkvdla7ons7p09h&raw=1" alt="Bannière Be With" style="width: 100%; height: auto;" />
+    <img src="https://www.dropbox.com/scl/fi/wcx18na9bcn8vxb0iect1/5EAE0391-39AB-4A9E-AB5A-5BD63E77D2E0.png?rlkey=cez7yvtl9k2m3zpoa2it9p84h&raw=1" alt="Logo Be With" style="position: absolute; top: 40px; left: 40px; max-height: 120px; filter: drop-shadow(0 8px 12px rgba(0,0,0,0.3));" />
   </section>
 
-  <!-- Contenu -->
   <div class="container">
-    <!-- Titre -->
     <section class="intro-title">
       <h1>Projet BW OM, la révolution du jeu !<br/>La première loterie mondiale qui relance le pouvoir d'achat !</h1>
     </section>
 
-    <!-- Bloc vision -->
     <section class="vision" style="background-color: #082244; color: white; padding: 40px; border-radius: 12px;">
       <div class="vision-text">
         <h2>Notre vision :</h2>
-        <p>
-          Première loterie mondiale qui a pour vocation de faire gagner les joueurs.<br>
+        <p>Première loterie mondiale qui a pour vocation de faire gagner les joueurs.<br>
           1 million de participants / un nombre de tirage journalier illimité !<br>
           Des lots qui ont pour vocation d'être tous distribués et le plus souvent possible !!
         </p>
@@ -98,7 +116,10 @@
       </div>
     </section>
 
-    <!-- Bloc Symboles -->
+    <section class="timeline">
+      <span>Création de BW</span>
+    </section>
+
     <section class="symbols">
       <div class="symbol-item">
         <img src="assets/symbole-systemie.png" alt="Systémie" />
@@ -122,7 +143,6 @@
       </div>
     </section>
 
-    <!-- Projets -->
     <section class="projects">
       <h2>Nos Projets</h2>
       <div class="project-logos">
@@ -137,13 +157,12 @@
         <a href="projets.html" class="btn">En Savoir Plus</a>
       </div>
     </section>
+  </div>
 
-    <!-- Footer -->
-    <footer style="background: #082244; color: white; text-align: center; padding: 30px; font-size: 14px;">
-      <p>© 2025 BW ENTERPRISES. Tous droits réservés. Aucune duplication même partielle n’est acceptée. Mentions légales.</p>
-    </footer>
+  <footer style="background: #082244; color: white; text-align: center; padding: 30px; font-size: 14px;">
+    <p>© 2025 BW ENTERPRISES. Tous droits réservés. Aucune duplication même partielle n’est acceptée. Mentions légales.</p>
+  </footer>
 
-    <!-- Popup Modal -->
   <div id="popupModal">
     <div id="popupModalContent">
       <a href="projets.html">
@@ -156,7 +175,6 @@
     </div>
   </div>
 
-  <!-- Script -->
   <script>
     function closePopup() {
       document.getElementById('popupModal').style.display = 'none';
@@ -166,11 +184,9 @@
     }
 
     window.addEventListener('load', function () {
-      const shouldHide = localStorage.getItem('hidePopup');
-      if (!shouldHide) {
-        setTimeout(() => {
-          const popup = document.getElementById('popupModal');
-          if (popup) popup.style.display = 'flex';
+      if (!localStorage.getItem('hidePopup')) {
+        setTimeout(function () {
+          document.getElementById('popupModal').style.display = 'flex';
         }, 1000);
       }
     });
