@@ -122,6 +122,12 @@ header {
   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
+/* Bouton spécifique à la bannière */
+.vision-banner .btn {
+  background: #ffffff;
+  color: #000000;
+}
+
 /* Symbols */
 .symbols {
   display: flex;
@@ -220,7 +226,7 @@ header {
   filter: drop-shadow(0 5px 10px rgba(0,0,0,0.3));
 }
 
-/* Boutons */
+/* Boutons génériques */
 .btn {
   display: inline-block;
   background: #082244;
