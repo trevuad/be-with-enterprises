@@ -4,15 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nos Projets - BW OM</title>
-  <link href="https://fonts.googleapis.com/css2?family=Palatino+Linotype&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
+      font-family: 'Lora', serif;
       margin: 0;
-      font-family: "Palatino Linotype", serif;
       background-color: #ffffff;
-      color: #000;
-      line-height: 1.6;
+      color: #222;
     }
 
     header {
@@ -35,25 +33,38 @@
       text-decoration: none;
     }
 
-    .hero {
-      position: relative;
+    .hero img {
       width: 100%;
-    }
-
-    .hero-bg {
-      width: 100%;
-      display: block;
+      height: auto;
       max-height: 400px;
       object-fit: cover;
+      display: block;
     }
 
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 40px;
-      background: #F9F6EB;
-      border-left: 30px solid #082244;
-      border-right: 30px solid #082244;
+    .projets-content {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 30px;
+      line-height: 1.8;
+      font-size: 18px;
+      background-color: #ffffff;
+    }
+
+    .projets-content p {
+      margin-bottom: 30px;
+    }
+
+    .projets-content strong {
+      font-weight: bold;
+    }
+
+    .projets-content .accent {
+      font-weight: bold;
+      font-size: 20px;
+      text-align: center;
+      display: block;
+      margin-top: 60px;
+      color: #082244;
     }
 
     .section-alt {
@@ -105,6 +116,14 @@
     .project-text p {
       line-height: 1.6;
     }
+
+    footer {
+      background: #082244;
+      color: white;
+      text-align: center;
+      padding: 30px;
+      font-size: 14px;
+    }
   </style>
 </head>
 <body>
@@ -120,10 +139,10 @@
   </header>
 
   <section class="hero">
-    <img class="hero-bg" src="https://www.dropbox.com/scl/fi/fx52jr5xi48v1kwmvzdhl/notre-vision1.png?rlkey=lkgy3aba4dy8tkrzse75v3j2s&raw=1" alt="Nos Projets - BW OM">
+    <img src="https://www.dropbox.com/scl/fi/fx52jr5xi48v1kwmvzdhl/notre-vision1.png?rlkey=lkgy3aba4dy8tkrzse75v3j2s&raw=1" alt="Nos Projets - BW OM">
   </section>
 
-  <section class="container">
+  <section class="projets-content">
     <div class="section-alt">
       <p><strong>Au commencement</strong>, il y a une envie simple, directe, essentielle : <strong>faire gagner les joueurs</strong>.</p>
       <p>Non pas un gagnant solitaire au bout d’un suspense interminable, mais <strong>des gagnants tous les jours</strong>, en continu, dans un système pensé pour redistribuer plutôt que retenir.</p>
@@ -150,7 +169,7 @@
       <p><strong>C’est pourquoi nous avons choisi de faire de BW OM la nourrice de tous nos projets.</strong><br>C’est par lui que les premières pierres seront posées.<br>C’est grâce à lui que tout ce que nous avons rêvé de mieux pour demain pourra exister aujourd’hui.</p>
     </div>
 
-    <p style="text-align: center; font-size: 20px; color: #082244; font-weight: bold; margin-top: 60px;">Et ce n’est que le début.<br>Découvrez comment, grâce à OM, chaque projet de Be With Enterprises trouve sa place dans une dynamique cohérente, joyeuse et porteuse.</p>
+    <p class="accent">Et ce n’est que le début.<br>Découvrez comment, grâce à OM, chaque projet de Be With Enterprises trouve sa place dans une dynamique cohérente, joyeuse et porteuse.</p>
   </section>
 
   <section class="projects-list">
@@ -198,7 +217,7 @@
     </div>
   </section>
 
-  <footer style="background: #082244; color: white; text-align: center; padding: 30px; font-size: 14px;">
+  <footer>
     <p>© 2025 Be With Enterprises. Tous droits réservés. Aucune duplication, même partielle, n’est acceptée. Mentions légales.</p>
   </footer>
 </body>
