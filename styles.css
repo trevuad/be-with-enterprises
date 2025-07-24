@@ -314,15 +314,14 @@ footer {
   text-align: center;
 }
 
+.logo-bw-seal {
+  margin-top: 30px;
+  text-align: center;
+}
+
 .logo-bw-seal img {
   width: 80px;
   height: auto;
-  opacity: 0.75;
-  transition: opacity 0.3s ease;
-}
-
-.logo-bw-seal img:hover {
-  opacity: 1;
 }
 
 .projects-list p {
