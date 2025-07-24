@@ -1,1 +1,89 @@
 
+/* ---- Base et typographie ---- */
+body {
+  margin: 0;
+  font-family: 'Palatino Linotype', 'Georgia', serif;
+  background-color: #ffffff;
+  color: #111;
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* ---- Titre principal ---- */
+.intro-title h1 {
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #0d1b2a;
+}
+
+/* ---- Paragraphe de contenu ---- */
+.vision-content p {
+  margin-bottom: 24px;
+  text-align: justify;
+}
+
+/* ---- Liste stylée ---- */
+.vision-content ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 30px;
+}
+
+.vision-content ul li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.vision-content ul li::before {
+  content: "⟡";
+  position: absolute;
+  left: 0;
+  color: #b38b00;
+  font-weight: bold;
+}
+
+/* ---- Bannière de fin ---- */
+.vision-banner-end {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.vision-footer-img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.vision-footer-text p {
+  font-style: italic;
+  font-size: 1.1em;
+  color: #333;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* ---- Responsive ---- */
+@media screen and (max-width: 768px) {
+  .intro-title h1 {
+    font-size: 2.2em;
+  }
+
+  .container {
+    padding: 30px 15px;
+  }
+
+  .vision-content p {
+    font-size: 17px;
+  }
+}
