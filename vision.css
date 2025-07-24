@@ -63,6 +63,15 @@ body {
   margin: 0 auto;
 }
 
+/* ---- Bannière de haut de page avec effet relief ---- */
+.hero-bg {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+  object-fit: cover;
+}
+
 /* ---- Bannière de fin ---- */
 .vision-banner-end {
   margin-top: 60px;
@@ -70,9 +79,14 @@ body {
 }
 
 .vision-footer-img {
-  max-width: 100%;
+  width: 120px;
   height: auto;
-  margin-bottom: 20px;
+  display: block;
+  margin: 40px auto 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  background-color: white;
+  padding: 8px;
 }
 
 .vision-footer-text p {
@@ -97,5 +111,9 @@ body {
   .vision-slogan p {
     font-size: 1.5em;
     padding: 8px 20px;
+  }
+
+  .vision-footer-img {
+    width: 90px;
   }
 }
