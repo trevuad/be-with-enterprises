@@ -3,16 +3,18 @@
 body {
   margin: 0;
   font-family: 'Palatino Linotype', 'Georgia', serif;
-  background-color: #ffffff;
+  background-color: #082244;
   color: #111;
   line-height: 1.8;
   font-size: 18px;
 }
 
 .container {
+  background-color: #fff;
   max-width: 900px;
   margin: 0 auto;
   padding: 40px 20px;
+  border-radius: 8px;
 }
 
 /* ---- Titre principal ---- */
