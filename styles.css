@@ -301,11 +301,11 @@ footer {
   padding: 20px;
   font-style: italic;
   font-size: 1.1em;
-  color: #111;
+  color: #f1f1f1; /* texte clair pour fond foncé */
   line-height: 1.7;
   text-align: center;
-  background-color: #f9f9f9;
-  border-left: 4px solid #0d1b2a;
+  background-color: #082244; /* ton bleu de fond principal */
+  border-left: 4px solid #b38b00;
   border-radius: 6px;
 }
 
