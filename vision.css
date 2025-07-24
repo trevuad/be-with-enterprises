@@ -22,11 +22,60 @@ body {
   text-align: justify;
 }
 
+/* ---- Mise en valeur des blocs textuels spécifiques ---- */
+.vision-intro {
+  font-size: 1.2em;
+  font-weight: 500;
+  text-align: center;
+  color: #0d1b2a;
+  margin-bottom: 40px;
+}
+
+.vision-quote {
+  font-size: 1.1em;
+  font-style: italic;
+  font-weight: 500;
+  color: #b38b00;
+  background-color: #fdf9f2;
+  border-left: 4px solid #b38b00;
+  padding: 20px 25px;
+  margin: 40px 0;
+  line-height: 1.7;
+}
+
+.vision-pivot {
+  font-style: italic;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #0d1b2a;
+  text-align: center;
+}
+
+.vision-transition {
+  text-align: center;
+  font-size: 1.1em;
+  font-style: italic;
+  color: #0d1b2a;
+  margin: 40px 0;
+}
+
+.vision-final-quote {
+  font-weight: bold;
+  font-style: italic;
+  color: #082244;
+  text-align: center;
+  margin: 40px 0;
+}
+
 /* ---- Liste stylée ---- */
 .vision-content ul {
   list-style: none;
   padding-left: 0;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+  background: #f9f9f9;
+  border-left: 4px solid #b38b00;
+  border-radius: 6px;
+  padding: 20px 25px;
 }
 
 .vision-content ul li {
@@ -37,10 +86,10 @@ body {
 }
 
 .vision-content ul li::before {
-  content: "⟡";
+  content: "›";
   position: absolute;
   left: 0;
-  color: #b38b00;
+  color: #082244;
   font-weight: bold;
 }
 
