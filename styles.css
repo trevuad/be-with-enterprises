@@ -295,6 +295,35 @@ footer {
   border-left: 4px solid #b38b00;
   border-radius: 6px;
 }
+.conclusion-projets {
+  max-width: 800px;
+  margin: 60px auto 80px auto;
+  padding: 20px;
+  font-style: italic;
+  font-size: 1.1em;
+  color: #111;
+  line-height: 1.7;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-left: 4px solid #0d1b2a;
+  border-radius: 6px;
+}
+
+.logo-bw-seal {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.logo-bw-seal img {
+  width: 80px;
+  height: auto;
+  opacity: 0.75;
+  transition: opacity 0.3s ease;
+}
+
+.logo-bw-seal img:hover {
+  opacity: 1;
+}
 
 .projects-list p {
   line-height: 1.6;
